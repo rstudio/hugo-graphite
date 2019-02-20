@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2016 Jonathan Rutheiser, 2016 - 2017 Yihui Xie, 2017 - 2019 Hadley Wickham and Robby Shaver 2019 Hadley Wickham, Robby Shaver, and Alison Hill
+Copyright (c) 2016 Jonathan Rutheiser, 2016 - 2017 Yihui Xie, 2017 - 2019 Hadley Wickham and Robby Shaver, 2019 Hadley Wickham, Robby Shaver, and Alison Hill
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
