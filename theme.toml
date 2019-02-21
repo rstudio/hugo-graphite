@@ -1,6 +1,6 @@
-name = "natrium"
+name = "tourmaline"
 license = "MIT"
-licenselink = "https://github.com/rstudio/hugo-natrium/blob/master/LICENSE.md"
+licenselink = "https://github.com/rstudio/hugo-tourmaline/blob/master/LICENSE.md"
 description = "A simple responsive blog theme for Hugo forked from versions by Jonathan Rutheiser and Yihui Xie, with modifications to make it work better for teams."
 homepage = ""
 min_version = "0.53"
