@@ -2,6 +2,12 @@
 
 # hugo-tourmaline
 
-This is a Hugo theme, forked from the Hugo Lithium theme by Jonathan Rutheiser and Yihui Xie, with modifications to make it work better for teams like `tidyverse.org`. 
+This is a Hugo theme, forked from the Hugo Lithium theme by Jonathan Rutheiser and Yihui Xie, with modifications by Hadley Wickham, Mara Averick, Robby Shaver, and the tidyverse team, plus changes to make it work better for RStudio teams like [`tidyverse.org`](https://www.tidyverse.org/) by Alison Hill. 
 
-This theme is a *work in progress*. This means that the theme will be changing frequently as we rapidly iterate and explore variations in search of the best fit. You are generally best off waiting until the theme is more mature before you use it. We'll update this `README` and the repo status when ready.
+Why tourmaline? It is a colorful mineral made up of several elements, including lithium. This theme also has several elements, or content types, enabled:
+
++ **articles** (blog posts with a thumbnail image on the listing page and a banner image on the single page; all link with team member names or just plain text for guest contributors)
++ **authors** (team members who may contribute to articles; includes a team listing page plus individual bios that link to articles contributed to for each)
++ **events** (including upcoming event sticky reminders, and upcoming event calendar, and a past event archive organized by year; all link with team member names in attendance)
+
+This theme is a *work in progress*. This means that the theme will be changing frequently as we rapidly iterate and explore variations to meet our needs. You are generally best off waiting until the theme is more mature before you use it. We'll update this `README` and the repo status when ready.
