@@ -1,6 +1,6 @@
 ---
 title: stringr 1.4.0
-author: [Mara averick, tom-kitten, Alison, peter-rabbit]
+author: [mara, tom-kitten, Alison, peter-rabbit]
 slug: stringr-1-4-0
 date: '2019-02-21'
 description: >
