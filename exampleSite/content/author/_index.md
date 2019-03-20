@@ -1,3 +1,4 @@
 ---
-title: Meet the creatures
+title: Meet the rabbits
+url: /rabbits
 ---
