@@ -1,10 +1,11 @@
-description = "The tidyverse is an integrated collection of R packages designed to make data science fast, fluid, and fun."
+description = "Beatrix Potter liked writing about rabbits and other creatures."
 
 # Link custom CSS and JS assets
 #   (relative to /static/css and /static/js respectively)
 custom_css = [""]
 
 # Define "news" as both articles and events
+# adding "events" here shows them in the "news" list pages
 mainSections = ["articles", "events"]
 
 # options for highlight.js (version, additional languages, and theme)

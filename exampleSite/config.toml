@@ -1,5 +1,5 @@
 # Title of your site
-title = "Education"
+title = "Rabbits and other creatures"
 
 # The URL of your site.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
@@ -13,7 +13,7 @@ googleAnalytics = ""
 
 relativeurls = false
 languageCode = "en-us"
-description = "An opinionated collection of R packages designed for data science."
+description = "A collection of books and characters created by Beatrix Potter."
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 # below is critical for non-authors to show up in article listing
