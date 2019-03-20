@@ -15,13 +15,12 @@
                         <!-- if nice list to start with, now create nicer list -->
                         {{ with $authors_list }}
                             {{ $author_count := (len .) }}
-                            {{ range $index, $val := . }}
-                              {{ $author := $val | title }}
+                            {{ range $index, $author := . }}
                               <!-- this pulls matching taxonomyTerm -->
                               {{- with $.Site.GetPage (printf "%s/%s" $taxo (urlize .)) }}
                                   <a href="{{ .Permalink }}">{{ .Params.name }}</a>
                               {{ else }}
-                                  {{ $author }}
+                                  {{ $author | title }}
                               {{ end }}
                             {{ end }}
                         {{ end }}
