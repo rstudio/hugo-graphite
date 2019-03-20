@@ -19,9 +19,9 @@
                               {{ $author := $val | title }}
                               <!-- this pulls matching taxonomyTerm -->
                               {{- with $.Site.GetPage (printf "%s/%s" $taxo (urlize .)) }}
-                                  <a href="{{ .Permalink }}">{{ .Params.name }}</a>{{ if eq (add $index 1) $author_count }}{{ else if eq 2 $author_count }} & {{ else if and (eq (add $index 2) $author_count) }}, & {{ else }}, {{ end }}
+                                  <a href="{{ .Permalink }}">{{ .Params.name }}</a>
                               {{ else }}
-                                  {{ $author }}{{ if eq (add $index 1) $author_count }}{{ else if eq 2 $author_count }} & {{ else if eq (add $index 2) $author_count }}, & {{ else }}, {{ end }}
+                                  {{ $author }}
                               {{ end }}
                             {{ end }}
                         {{ end }}
