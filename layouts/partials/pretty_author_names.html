@@ -18,14 +18,14 @@
                             {{ range $index, $author := . }}
                               <!-- this pulls matching taxonomyTerm -->
                               {{- with $.Site.GetPage (printf "%s/%s" $taxo (urlize .)) }}
-                                  <a href="{{ .Permalink }}">{{ .Params.name }}</a>
+                                  <a href="{{ .Permalink }}">{{- .Params.name -}}</a>
                               {{ else }}
-                                  {{ $author | title }}
+                                  {{- $author | title -}}
                               {{ end }}
                               {{ if or (eq 1 $author_count) (eq (add $index 1) $author_count) }}
-                                  {{ else if eq 2 $author_count }}{{ print " & " }}
-                                  {{ else if eq (add $index 2) $author_count }}{{ print ", & " }}
-                                  {{ else }}{{ print ", " }}
+                                  {{ else if eq 2 $author_count }}{{- print " & " -}}
+                                  {{ else if eq (add $index 2) $author_count }}{{- print ", & " -}}
+                                  {{ else }}{{- print ", " -}}
                               {{ end }}
                             {{ end }}
                         {{ end }}
