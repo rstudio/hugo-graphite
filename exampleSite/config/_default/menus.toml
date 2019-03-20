@@ -11,5 +11,5 @@
     weight = 2
 [[main]]
     name = "Team"
-    url = "/authors/"
+    url = "/author/"
     weight = 3
