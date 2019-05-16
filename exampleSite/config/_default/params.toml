@@ -16,6 +16,19 @@ highlightjsTheme = "github"
 MathJaxCDN = "//cdn.bootcss.com"
 MathJaxVersion = "2.7.1"
 
+# Logo file relative to static/images/
+# to appear in upper navbar
+[logo]
+    url = "Color/RStudio-Education.jpg"
+    width = 50
+    height = 50
+    alt = "RStudio Education"
+
+[footer]
+    github_url = "https://github.com/rstudio-education"
+    twitter_url = "https://twitter.com/hashtag/rstats"
+    support = "Proudly supported by"
+
 # leave blank in quotes for the default = true
 # to turn off, set = false (no quotes)
 [authors]
@@ -28,11 +41,6 @@ MathJaxVersion = "2.7.1"
 # to turn off, set = false (no quotes)
 [events]
     link_archive = "" # default is true
-
-[footer]
-    github_url = "https://github.com/rstudio-education"
-    twitter_url = "https://twitter.com/hashtag/rstats"
-    support = "Proudly supported by"
 
 # customize your site colors
 # these colors get applied by layouts/partials/custom-site.css
