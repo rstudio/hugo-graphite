@@ -19,7 +19,7 @@ MathJaxVersion = "2.7.1"
 # Logo file relative to static/images/
 # to appear in upper navbar
 [logo]
-    url = "Color/RStudio-Education.jpg"
+    url = "White/rstudio-edu.png"
     width = 50
     height = 50
     alt = "RStudio Education"
