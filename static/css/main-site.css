@@ -293,6 +293,7 @@ a {
   align-items: flex-end; }
 
 #rStudioHeader .productName {
+  font-family: "Source Code Pro", monospace;
   font-weight: normal;
   font-size: 40px;
   color: inherit;
@@ -309,7 +310,7 @@ a {
 
 #rStudioHeader .productName:hover {
   text-decoration: none;
-  color: #42709b; }
+}
 
 #rStudioHeader .rStudio {
   margin-top: 10px;
@@ -914,7 +915,7 @@ ol {
   list-style: decimal outside none; }
 
 pre, code {
-  font-family: "PT Mono", monospace;
+  font-family: "Source Code Pro", monospace;
   background-color: #f8f8f8;
   font-size: 14px; }
 
