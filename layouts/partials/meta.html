@@ -5,7 +5,7 @@
 <meta name="og:image" content="https://www.tidyverse.org/images/tidyverse-default.png" >
 {{ .Hugo.Generator }}
 
-{{ if eq .URL "/" -}}
+{{ if .IsHome -}}
 <title>{{ .Site.Title }}</title>
 <meta property="og:title" content="{{ .Site.Title }}">
 <meta property="og:type" content="website">

@@ -13,7 +13,7 @@
       {{ $slug := .Param "slug" }}
       <div class="article-header">
         {{ with $banner }}<div class="photo" style="background-image: url('{{ .RelPermalink }}');">{{ end }}</div>
-        {{ with $.Params.photo }}<div class="photoCredit">Photo by <a href="{{ .url }}">{{ .author }}</a></div>
+        {{ with $.Params.photo }}<div class="photoCredit">Photo by <a href="{{ .RelPermalink }}">{{ .author }}</a></div>
       </div>
       {{ end }}
 
