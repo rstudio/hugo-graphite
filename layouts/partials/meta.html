@@ -2,7 +2,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="og:image" content="/images/{{ .Site.Params.sharing_image }}" >
+{{ with .Site.Params.sharing_image }}
+  <meta name="og:image" content="{{ relURL (print "/images/" . | urlize) }}" >
+{{ end }}
 {{ .Hugo.Generator }}
 
 {{- if .IsHome -}}
@@ -12,7 +14,9 @@
 <meta property="description" content="{{ .Site.Params.description }}">
 <meta property="og:description" content="{{ .Site.Params.description }}">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="/images/{{ .Site.Params.twitter_image }}" >
+{{with .Site.Params.twitter_image}}
+  <meta name="twitter:image" content="{{ relURL (print "/images/" . | urlize) }}" >
+{{ end }}
 {{- else -}}
 <title>{{ .Title }}{{ with .Params.subtitle }} - {{ . }} {{ end }} - {{ .Site.Title }}</title>
 <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
