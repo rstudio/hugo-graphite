@@ -1010,7 +1010,7 @@ em {
   height: 0;
   clear: both; }
 
-.bookCover {
+.article-content img.bookCover {
   width: 320px;
   height: auto;
   -moz-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.1);
