@@ -9,7 +9,7 @@
 {{- end -}}
 {{ hugo.Generator }}
 
-{{- if .IsHome -}}
+{{- if or .IsHome (not (eq .Section "blog")) -}}
   <title>{{ .Site.Title }}</title>
   <meta property="og:title" content="{{ .Site.Title }}">
   <meta property="og:type" content="website">
@@ -28,10 +28,11 @@
   <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
   <meta property="og:type" content="article">
   <meta name="twitter:card" content="summary">
-  {{ $featured_image := (.Resources.ByType "image").GetMatch "*-sq*" }}
-  {{ if $featured_image }}
-    <meta name="twitter:image" content="{{ $featured_image.Permalink }}" >
+  {{ $thumbnail := (.Resources.ByType "image").GetMatch "*-sq*" }}
+  {{ if $thumbnail }}
+    <meta name="twitter:image" content="{{ $thumbnail.Permalink }}" >
   {{ end }}
   <meta property="description" content="{{ .Params.description }}">
   <meta property="og:description" content="{{ .Params.description }}">
+
 {{- end }}
