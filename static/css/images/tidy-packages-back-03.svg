@@ -1,1 +1,13 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 215"><defs><style>.cls-1{fill:#fceaa3;}</style></defs><title>tidy-packages-back</title><path class="cls-1" d="M60-95.72l55,31.85V-.13L60,31.72,5-.13V-63.87L60-95.72m0-5.78L0-66.75V2.75L60,37.5,120,2.75v-69.5Z"/><polygon class="cls-1" points="182 109.75 182 40.25 122 5.5 62 40.25 62 109.75 122 144.5 182 109.75"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="189px" height="215px" viewBox="0 0 189 215" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>tidy-packages-back-03</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Unknown-Copy-2" transform="translate(3.521925, -102.000000)" fill="#FCEAA3" fill-rule="nonzero">
+            <path d="M60,6.28 L115,38.13 L115,101.87 L60,133.72 L5,101.87 L5,38.13 L60,6.28 Z M60,0.5 L0,35.25 L0,104.75 L60,139.5 L120,104.75 L120,35.25 L60,0.5 Z" id="Shape"></path>
+            <polygon id="Shape" points="182 211.75 182 142.25 122 107.5 62 142.25 62 211.75 122 246.5"></polygon>
+        </g>
+    </g>
+</svg>
