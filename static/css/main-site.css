@@ -108,7 +108,8 @@ html, body {
 
 .bandContent {
   margin: 0 auto;
-  max-width: 1200px; }
+  max-width: 1100px;
+}
 
 .full {
   margin: 30px 0 30px 0; }
@@ -351,7 +352,7 @@ a {
 #rStudioHeader #menu {
   text-align: right;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 0.8rem;
   line-height: 26px;
   white-space: nowrap; }
   #rStudioHeader #menu #menuToggler {
@@ -392,6 +393,8 @@ a {
       vertical-align: bottom; }
     #rStudioHeader #menu .menuItem.gitHubText {
       display: none; }
+    #rStudioHeader #menu .menuItem:last-of-type {
+	    padding-right: 0px; }
 
 @media screen and (max-width: 1023px) {
   #rStudioHeader #menu #menuToggler {
@@ -628,7 +631,7 @@ a {
     background-position: center center; }
   .listItem .itemDetails {
     width: 100%;
-    font-size: 16px;
+    font-size: .875rem;
     line-height: 20px; }
     .listItem .itemDetails .itemHeader {
       display: flex;
@@ -783,13 +786,13 @@ table.contentListing {
     font-size: 24px;
     line-height: 28px; }
   .listItem .itemDetails .itemHeader .itemTag {
-    font-size: 13px;
+    font-size: .875rem;
     margin-right: 10px;
     padding-top: 8px;
     line-height: 20px; }
   .listItem .itemDetails .itemDescription {
-    font-size: 14px;
-    line-height: 22px; }
+	  font-size: 1.2em;
+	  line-height: 1.6em; }
   .listItem .itemDetails .itemMeta .author {
     font-size: 16px;
     line-height: 25px;
@@ -820,7 +823,9 @@ table.contentListing {
     background-image: url(images/tidyCategoryDeepDive.svg); }
 
 .article-title {
-  margin-top: 0px; }
+  margin-top: 0px; 
+  line-height: 1.3em;
+}
 
 .article-header .photo {
   width: 100%;
@@ -913,7 +918,7 @@ h1 {
 
 h2 {
   font-size: 2.0em;
-  margin-bottom: .5em; }
+  margin-bottom: 1.5em; }
 
 h3 {
   font-size: 1.6em;
