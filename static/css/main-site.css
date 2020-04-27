@@ -79,7 +79,7 @@ table {
 
 body, button, input, textarea {
   font-family: 'Muli', sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: normal;
   -webkit-font-smoothing: antialiased; }
 
@@ -628,7 +628,7 @@ a {
     background-position: center center; }
   .listItem .itemDetails {
     width: 100%;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 20px; }
     .listItem .itemDetails .itemHeader {
       display: flex;
@@ -1178,11 +1178,11 @@ em {
   .section .event .eventTitle {
     margin-bottom: 10px; }
   .section .event .eventLocation {
-    font-size: 16px; }
+    font-size: 17px; }
   .section .event .eventDate {
-    font-size: 15px; }
+    font-size: 17px; }
   .section .event .eventDetails {
-    font-size: 13px;
+    font-size: 16px;
     line-height: 18px; }
 
 .hexBadges {
