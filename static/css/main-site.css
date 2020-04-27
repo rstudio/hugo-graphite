@@ -651,10 +651,10 @@ a {
         flex-shrink: 0;
         height: 30px; }
     .listItem .itemDetails .itemMeta .itemDescription {
-      margin-bottom: 5px;
+      margin-bottom: .375rem;
       white-space: pre-line; }
     .listItem .itemDetails .itemMeta .itemDate, .listItem .itemDetails .itemMeta .itemInfo {
-      font-size: 12px;
+      font-size: .875rem;
       color: #808080; }
       .listItem .itemDetails .itemMeta .itemDate .created, .listItem .itemDetails .itemMeta .itemDate .updated, .listItem .itemDetails .itemMeta .itemInfo .created, .listItem .itemDetails .itemMeta .itemInfo .updated {
         display: inline-block; }
@@ -791,12 +791,12 @@ table.contentListing {
     padding-top: 8px;
     line-height: 20px; }
   .listItem .itemDetails .itemDescription {
-	  font-size: 1.2em;
-	  line-height: 1.6em; }
+	  font-size: .975rem;
+	  line-height: 1.5rem;}
   .listItem .itemDetails .itemMeta .author {
-    font-size: 16px;
-    line-height: 25px;
-    margin-bottom: 7px;
+    font-size: 1.0rem;
+    line-height: 1.375rem;
+    margin-bottom: .375rem;
     color: #505050; }
 
 /* pagination */
@@ -1187,8 +1187,8 @@ em {
   .section .event .eventDate {
     font-size: 17px; }
   .section .event .eventDetails {
-    font-size: 16px;
-    line-height: 18px; }
+    font-size: 0.94rem;
+    line-height: 1.2rem; }
 
 .hexBadges {
   position: relative;
