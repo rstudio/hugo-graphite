@@ -1355,3 +1355,14 @@ table, tbody, tfoot, thead, tr, th, td {
 .pl-1 {
   padding-left: .25rem !important;
 }
+
+/*---- STICKY TOC for all w/ SMOOTH SCROLL-----*/
+
+.column25 {
+  position: sticky;
+  top: 5.53em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
