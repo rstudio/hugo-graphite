@@ -15,5 +15,4 @@ categories: []
 photo:
   url: https://unsplash.com/photos/wEL2zPX3jDg
   author: Fabio Ballasina
-  alt: "A wide photograph"
 ---
