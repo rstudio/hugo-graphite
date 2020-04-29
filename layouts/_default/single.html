@@ -14,7 +14,7 @@
       <div class="article-header">
           {{ with $banner }}
           <div class="photo">
-          <img src='{{ .RelPermalink }}' alt='{{ $page.Params.alt | default "A wide photograph" }}'>
+          <img src='{{ .RelPermalink }}' alt='{{ with $page.Params.alt }}{{.}}{{ end }}'>
           </div>
           {{ end }}
         {{ with $.Params.photo }}<div class="photoCredit">Photo by <a href="{{ .url }}">{{ .author }}</a></div>
