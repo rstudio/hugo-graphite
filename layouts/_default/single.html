@@ -11,10 +11,10 @@
       <h1 class="article-title">{{ .Title | markdownify }}</h1>
 
       {{ $slug := .Param "slug" }}
-      <div class="article-header">
+      <div class="article-header" aria-hidden="true">
           {{ with $banner }}
           <div class="photo">
-          <img src='{{ .RelPermalink }}' alt='{{ with $page.Params.alt }}{{.}}{{ end }}'>
+          <img src='{{ .RelPermalink }}'>
           </div>
           {{ end }}
         {{ with $.Params.photo }}<div class="photoCredit">Photo by <a href="{{ .url }}">{{ .author }}</a></div>
