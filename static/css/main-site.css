@@ -625,10 +625,7 @@ a {
     flex-shrink: 0;
     width: 150px;
     height: 150px;
-    margin: 0 15px 15px 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center; }
+    margin: 0 15px 15px 0; }
   .listItem .itemDetails {
     width: 100%;
     font-size: .875rem;
