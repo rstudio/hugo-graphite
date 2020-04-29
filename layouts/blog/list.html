@@ -13,8 +13,8 @@
           <div class="listItem">
              {{ $card := (.Resources.ByType "image").GetMatch "*-sq*" }}
              {{ with $card }}
-              <a class="itemImage project" href="{{ $post.RelPermalink }}">
-                <img src="{{ .RelPermalink }}" alt = "{{ with $post.Params.alt }}{{.}}{{ end }}">
+              <a class="itemImage project" href="{{ $post.RelPermalink }}" aria-hidden="true">
+                <img src="{{ .RelPermalink }}">
               </a>
               {{ end }}
             <div class="itemDetails">
