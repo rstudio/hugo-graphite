@@ -14,7 +14,7 @@
              {{ $card := (.Resources.ByType "image").GetMatch "*-sq*" }}
              {{ with $card }}
               <a class="itemImage project" href="{{ $post.RelPermalink }}">
-                <img src="{{ .RelPermalink }}" alt = "">
+                <img src="{{ .RelPermalink }}" alt = "{{ with $post.Params.alt }}{{.}}{{ end }}">
               </a>
               {{ end }}
             <div class="itemDetails">
