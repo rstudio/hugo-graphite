@@ -842,7 +842,7 @@ table.contentListing {
 
 .package-section .packages .package {
   position: relative;
-  height: 200px;
+  height: 215px;
   overflow-y: hidden;
   background-size: 190px 215px;
   background-repeat: no-repeat;
