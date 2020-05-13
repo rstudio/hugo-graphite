@@ -832,6 +832,12 @@ table.contentListing {
   overflow: hidden;
 }
 
+.article-header .photo img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .article-header .photoCredit {
   font-size: 12px;
   text-align: right;
