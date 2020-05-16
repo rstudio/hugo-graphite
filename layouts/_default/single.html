@@ -17,9 +17,11 @@
           <img src='{{ .RelPermalink }}'>
           </div>
           {{ end }}
-        {{ with $.Params.photo }}<div class="photoCredit">Photo by <a href="{{ .url }}">{{ .author }}</a></div>
+        {{ with $.Params.photo }}
+        <div class="photoCredit">Photo by <a href="{{ .url }}">{{ .author }}</a>
+        </div>
+        {{ end }}
       </div>
-      {{ end }}
 
       {{ if or (eq .Section "articles") (eq .Section "blog") }}
       <span class="article-date"><i class="fas fa-calendar-day fa-fw"></i>&nbsp;&nbsp;{{ .Date.Format "2006/01/02" }}</span>
@@ -40,7 +42,8 @@
 
       {{ partial "disqus.html" .}}
 
-      </div>
+      </div> <!-- column75-->
+      
       <div class="column25">
         <div class="section hideOnMobile">
           <div class="sectionTitle">Contents</div>
@@ -49,11 +52,9 @@
         <div class="section">
           {{ partial "events_sticky.html" . }}
         </div>
-      </div>
+      </div> <!-- column25-->
 
-
-
-    </div>
+    </div> <!-- full splitColumns -->
   </div>  <!-- bandContent -->
 </div> <!-- band -->
 
