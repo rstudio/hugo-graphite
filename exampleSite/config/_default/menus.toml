@@ -6,8 +6,8 @@
     url = "/packages/"
     weight = 1
 [[main]]
-    name = "News"
-    url = "/news/"
+    name = "Blog"
+    url = "/blog/"
     weight = 2
 [[main]]
     name = "Learn"
