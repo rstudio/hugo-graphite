@@ -45,11 +45,14 @@
       <div class="column25">
         <div class="section hideOnMobile">
           <div class="sectionTitle">Contents</div>
-          {{ .TableOfContents }}
+            {{ .TableOfContents }}
+        </div>
+        <div class="section">
+          {{ partial "events_sticky.html" . }}
         </div>
       </div>
 
-{{ partial "sidebar.html" . }}
+
 
     </div>
   </div>  <!-- bandContent -->
