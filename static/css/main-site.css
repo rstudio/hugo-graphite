@@ -625,10 +625,7 @@ a {
     flex-shrink: 0;
     width: 150px;
     height: 150px;
-    margin: 0 15px 15px 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center; }
+    margin: 0 15px 15px 0; }
   .listItem .itemDetails {
     width: 100%;
     font-size: .875rem;
@@ -826,14 +823,20 @@ table.contentListing {
   margin-top: 0px; 
   line-height: 1.3em;
 }
-
+  
 .article-header .photo {
   width: 100%;
   height: 100px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  border-top: 5px solid #e4e4e4; }
+  border-top: 5px solid #e4e4e4;
+  position: relative;
+  overflow: hidden;
+}
+
+.article-header .photo img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 .article-header .photoCredit {
   font-size: 12px;

@@ -1,5 +1,4 @@
 ---
-title: News
-url: /news
+title: Posts
 copy_clipboard: true
 ---
