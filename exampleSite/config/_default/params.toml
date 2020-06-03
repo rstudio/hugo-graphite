@@ -77,7 +77,7 @@ MathJaxVersion = "2.7.1"
     # Menu
     menu_primary = "white"
     menu_text = "black"
-    menu_text_active = "#fff"
+    menu_text_active = "#4254A7"
     menu_text_current = "#4254A7"
     menu_decorate_current = "none"
     menu_title = "#4254A7" # product name
@@ -85,8 +85,8 @@ MathJaxVersion = "2.7.1"
     menu_box_hover = "white"
     menu_box_active = "#fcfcfc"
     # Tables
-    header_background = "#dfe3eb"
-    table_row_even = "#f7faff"
-    table_row_odd = "#fff"
+    header_background = "#1a162d80"
+    table_row_even = "#fcfcfc"
+    table_row_odd = "#1a162d10"
     # Author taxo- latest border
     latest_border = "#dae8f6"
