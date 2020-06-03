@@ -65,25 +65,25 @@ MathJaxVersion = "2.7.1"
 [colors]
     text = "#404040" # black
     # Links
-    link = "#1a9a9d"
-    link_hover = "#1a9a9d"
+    link = "#4254A7"
+    link_hover = "#4254A7"
     # Footer
-    footer_primary = "#767381" # same as tidyverse.org
-    footer_text = "#e3eef8" # same as tidyverse.org
+    footer_primary = "#4254a730"
+    footer_text = "#4254A7"
     # Backgrounds
     background = "white"
     home_section_odd = "white"
-    home_section_even = "#f0eee9"
+    home_section_even = "#fcfcfc"
     # Menu
-    menu_primary = "#519199"
-    menu_text = "#fff"
+    menu_primary = "white"
+    menu_text = "black"
     menu_text_active = "#fff"
-    menu_text_current = "#519199"
+    menu_text_current = "#4254A7"
     menu_decorate_current = "none"
-    menu_title = "#fff" # product name
-    menu_title_active = "#deef03" # hover product name
-    menu_box_hover = "#7db3ba"
-    menu_box_active = "white"
+    menu_title = "#4254A7" # product name
+    menu_title_active = "00000075" # hover product name
+    menu_box_hover = "white"
+    menu_box_active = "#fcfcfc"
     # Tables
     header_background = "#dfe3eb"
     table_row_even = "#f7faff"
