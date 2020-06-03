@@ -393,8 +393,13 @@ a {
       vertical-align: bottom; }
     #rStudioHeader #menu .menuItem.gitHubText {
       display: none; }
-    #rStudioHeader #menu .menuItem:last-of-type {
-	    padding-right: 0px; }
+      
+      /* Remove padding-right from last navbar link if it's a Font Awesome icon, 
+         so that is aligns perfectly with right edge of site content */
+         
+    /*#rStudioHeader #menu .menuItem:last-of-type {
+	      padding-right: 0px;
+	    } */
 
 @media screen and (max-width: 1023px) {
   #rStudioHeader #menu #menuToggler {
