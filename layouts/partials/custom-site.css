@@ -1,3 +1,6 @@
+/* Google Fonts */
+{{.Param "headers.import"}}
+
 body {
 	background-color: {{ .Param "colors.background" }};
 	color: {{ .Param "colors.text" }}
@@ -81,3 +84,17 @@ table tbody tr:nth-child(odd){
 .latest {
   border-top: .5em solid {{ .Param "colors.latest_border" }};
 }
+
+
+
+/* Headers */
+
+h1, .article-title {
+ font-family: " {{ .Param "headers.font-family" }} ";
+}
+
+h2 {
+ font-family: " {{ .Param "headers.font-family" }} ";
+}
+
+/*
