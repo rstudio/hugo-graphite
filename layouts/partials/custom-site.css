@@ -1,5 +1,5 @@
 /* Google Fonts */
-{{.Param "headers.import"}}
+{{ .Param "headers.import" }}
 
 body {
 	background-color: {{ .Param "colors.background" }};
@@ -85,16 +85,14 @@ table tbody tr:nth-child(odd){
   border-top: .5em solid {{ .Param "colors.latest_border" }};
 }
 
-/* Headers */
 
 {{with .Param "headers.font-family"}}
 
-  h1, h2, 
-  .article-title, 
-  div.tagline,
-  #TableOfContents a {
-    font-family: "{{ .Param "headers.font-family" }}";
+  /* Headers */
+
+  h1, h2, .article-title, div.tagline {
+   font-family: " {{ . }} ";
   }
-  
+
 {{end}}
 
