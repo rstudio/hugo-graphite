@@ -97,10 +97,10 @@ MathJaxVersion = "2.7.1"
     import = "@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');"
     font-family = "Libre Baskeville"
         
-# Should header text be transformed to be "uppercase"? Otherwise comment ou
-    homepage_band_text = "uppercase"
-    table_contents_header = "uppercase"
-    uppercase = "true"
+    # Should header text be transformed to be "uppercase"? Otherwise comment ou
+    # homepage_band_text = "uppercase"
+    # table_contents_header = "uppercase"
+    #uppercase = "true"
     
     
 
