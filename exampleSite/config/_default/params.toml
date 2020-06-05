@@ -100,9 +100,7 @@ MathJaxVersion = "2.7.1"
 # Should header text be transformed to be "uppercase"? Otherwise comment ou
     homepage_band_text = "uppercase"
     table_contents_header = "uppercase"
-    
-    uppercase = true
-    
+    uppercase = "true"
     
     
 

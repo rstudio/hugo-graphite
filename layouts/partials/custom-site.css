@@ -101,7 +101,7 @@ table tbody tr:nth-child(odd){
 div.tagline {
   
   {{with .Param "headers.font-family" }}
-    font-family: "{{.Param "headers.font-family"}}";
+    font-family: "{{ .Param "headers.font-family" }}";
   {{end}}
   
   {{with .Param "headers.uppercase" }}
@@ -116,10 +116,10 @@ div.tagline {
 /* Table of Contents header */
 
   {{with .Param "headers.uppercase" }}
-    .sectionTitle {
-      text-transform: uppercase;
-      letter-spacing: 1pt;
-      font-weight: bold;
-      font-size: 0.8rem;
-    }
+      .sectionTitle {
+        text-transform: uppercase;
+        letter-spacing: 1pt;
+        font-weight: bold;
+        font-size: 0.8rem;
+      }
   {{end}}
