@@ -85,16 +85,41 @@ table tbody tr:nth-child(odd){
   border-top: .5em solid {{ .Param "colors.latest_border" }};
 }
 
-
-{{with .Param headers.font-family}}
-
 /* Headers */
 
-  h1, h2, .article-title, div.tagline {
-   font-family: "{{ .Param "headers.font-family" }}";
-  }
+{{with .Param "headers.font-family"}}
 
+  h1, h2, 
+  .article-title, 
+  div.tagline,
+  #TableOfContents a {
+    font-family: "{{ .Param "headers.font-family" }}";
+  }
+  
 {{end}}
 
+div.tagline {
+  
+  {{with .Param "headers.font-family" }}
+    font-family: "{{.Param "headers.font-family"}}";
+  {{end}}
+  
+  {{with .Param "headers.uppercase" }}
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+    font-weight: bold;
+    font-size: 1.2rem;
+  {{end}}
+  
+}
 
-/*
+/* Table of Contents header */
+
+  {{with .Param "headers.uppercase" }}
+    .sectionTitle {
+      text-transform: uppercase;
+      letter-spacing: 1pt;
+      font-weight: bold;
+      font-size: 0.8rem;
+    }
+  {{end}}
