@@ -91,14 +91,13 @@ MathJaxVersion = "2.7.1"
     # Author taxo- latest border
     latest_border = "#dae8f6"
     
-# Customize your site headers
+# Customize font for Headers (article headers, h1, h2, etc.) with Google Fonts
 [headers]
-    # Select your Google font for Headers (article headers, h1 & h2)
-    # Import a Google font, e.g. "@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');"
+    # Import a Google font and styles, e.g. "@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');"
     import = "@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');"
     font-family = "Libre Baskeville"
         
     # Homepage, band headers
-    
+
 
 

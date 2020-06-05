@@ -86,15 +86,15 @@ table tbody tr:nth-child(odd){
 }
 
 
+{{with .Param headers.font-family}}
 
 /* Headers */
 
-h1, .article-title {
- font-family: " {{ .Param "headers.font-family" }} ";
-}
+  h1, h2, .article-title, div.tagline {
+   font-family: "{{ .Param "headers.font-family" }}";
+  }
 
-h2 {
- font-family: " {{ .Param "headers.font-family" }} ";
-}
+{{end}}
+
 
 /*
