@@ -97,3 +97,6 @@ MathJaxVersion = "2.7.1"
     import = "@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');"
     font-family = "Libre Baskeville"
     
+[bullets]
+    color = #f6b73c
+    

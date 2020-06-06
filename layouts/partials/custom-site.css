@@ -90,9 +90,27 @@ table tbody tr:nth-child(odd){
 
   /* Headers */
 
-  h1, h2, .article-title, div.tagline {
+  h1, h2, 
+  .article-title, 
+  div.tagline {
    font-family: " {{ . }} ";
   }
 
 {{end}}
 
+
+{{with .Para "bullets.color"}}
+
+  .article-content ul {
+    list-style: none;
+  }
+
+  .article-content ul li::before {
+  	content: "\2022";
+  	color: {{ . }} ;
+  	display: inline-block;
+  	width: 1.5em;
+  	margin-left: -1.5em;
+  }
+
+{{end}}
