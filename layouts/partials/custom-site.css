@@ -111,6 +111,10 @@ table tbody tr:nth-child(odd){
   	display: inline-block;
   	width: 1.5em;
   	margin-left: -1.5em;
+  	
+  .article-content ul > li > p {
+    display: inline;
+}
   }
 
 {{end}}
