@@ -99,7 +99,7 @@ table tbody tr:nth-child(odd){
 {{end}}
 
 
-{{with .Para "bullets.color"}}
+{{with .Param "bullets.color"}}
 
   .article-content ul {
     list-style: none;

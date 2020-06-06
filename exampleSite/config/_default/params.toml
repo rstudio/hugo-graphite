@@ -98,5 +98,5 @@ MathJaxVersion = "2.7.1"
     font-family = "Libre Baskeville"
     
 [bullets]
-    color = #f6b73c
+    color = "#f6b73c"
     
