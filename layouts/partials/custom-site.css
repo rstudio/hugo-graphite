@@ -189,3 +189,33 @@ div.sectionTitle {
   }
 
 {{end}}  
+
+/* -----Hexes------*/
+
+{{with .Param "hexes.hex_weight"}}
+
+  #homeContent .band.first .bandContent {
+    background-image: url(../css/images/tidy-back-01-thin.svg);
+  }
+  
+  #homeContent .band.second .bandContent {
+    background-image: url(../css/images/tidy-back-02-thin.svg);
+  }
+  
+  #homeContent .band.third .bandContent {
+    background-image: url(../css/images/tidy-back-03-thin.svg);
+  }
+  
+  .package-section .packages .package {
+    background-image: url(../css/images/tidy-packages-back-01-thin.svg); 
+}
+
+  .package-section .packages .package:first-of-type {
+      background-image: url(../css/images/tidy-packages-back-02-thin.svg); 
+}
+
+  .package-section .packages .package:last-of-type {
+      background-image: url(../css/images/tidy-packages-back-03-thin.svg); 
+} 
+
+{{end}}

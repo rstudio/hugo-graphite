@@ -110,7 +110,10 @@ MathJaxVersion = "2.7.1"
 [uppercase]
     text_transform = "uppercase"
 
-
+[hexes]
+# To use thin hex svg, set = "thin"
+# To turn off (default), set = false (no quotes)
+    hex_weight = "thin"
     
 
     
