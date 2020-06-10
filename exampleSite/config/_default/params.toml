@@ -104,16 +104,17 @@ MathJaxVersion = "2.7.1"
 [bullets]
     color = "#f6b73c"
     
-# To turn on, set text_transform = "uppercase"
-# To turn off (default), set = false (no quotes)
-# Make particular headers uppercase
-[uppercase]
+    
+[capitalization]
+# Make particular headers uppercase, lowercase, or normal (set = false (no quotes))
     text_transform = "uppercase"
 
 [hexes]
-# To use thin hex svg, set = "thin"
-# To turn off (default), set = false (no quotes)
-    hex_weight = "thin"
-    
+    thin_hex = true
 
+[borders]
+# For thin lines on Navbar, Table of contents divider, band borders, etc.
+# To turn on, set = "1px"
+# To turn off (default), set = false (no quotes)
+    thin_lines = "1px"
     

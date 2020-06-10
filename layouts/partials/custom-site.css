@@ -163,26 +163,26 @@ div.sectionTitle {
 
 {{end}}
 
-/* Uppercase Headers */
+/* ------Capitalization of Headers------- */
 
-{{with .Param "uppercase.text_transform"}}
+{{with .Param "capitalization.text_transform"}}
   
   div.tagline {
     font-size: 1.2rem !important;
-    text-transform: uppercase;
+    text-transform: {{ . }};
     font-weight: bold;
     letter-spacing: 2pt;
   }
   
   #menu {
-    text-transform: uppercase;
+    text-transform: {{ . }};
     letter-spacing: 2pt;
     font-size: 0.8rem !important;
   }
   
   .sectionTitle,
   .sectionTitle a {
-    text-transform: uppercase;
+    text-transform: {{ . }};
     letter-spacing: 2pt;
     font-size: 0.8rem;
     font-weight: bold;
@@ -191,8 +191,7 @@ div.sectionTitle {
 {{end}}  
 
 /* -----Hexes------*/
-
-{{with .Param "hexes.hex_weight"}}
+{{if .Param "hexes.thin_hex"}}
 
   #homeContent .band.first .bandContent {
     background-image: url(../css/images/tidy-back-01-thin.svg);
@@ -208,14 +207,38 @@ div.sectionTitle {
   
   .package-section .packages .package {
     background-image: url(../css/images/tidy-packages-back-01-thin.svg); 
-}
+  }
 
   .package-section .packages .package:first-of-type {
       background-image: url(../css/images/tidy-packages-back-02-thin.svg); 
-}
+  }
 
   .package-section .packages .package:last-of-type {
       background-image: url(../css/images/tidy-packages-back-03-thin.svg); 
-} 
+  } 
 
 {{end}}
+
+/*----- Borders------ */
+
+{{with .Param "borders.thin_lines"}}
+
+  #rStudioHeader {
+    box-shadow: 0 {{ . }} 0px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 {{ . }} 0px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 {{ . }} 0px 0px rgba(0, 0, 0, 0.15);
+  }
+  
+  #homeContent .band.second {
+    border-bottom: solid {{ . }} #d9d9d9;
+    border-top: solid {{ . }} #d9d9d9;
+  }
+  
+  .column25 {
+    padding-left: 3em;
+    border-left: solid #d9d9d9 {{ . }};
+  }
+
+{{end}}
+
+
