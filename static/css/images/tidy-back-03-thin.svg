@@ -5,7 +5,7 @@
 <style type="text/css">
 	.st0{fill:#f4b73b;}
 	.st1{fill:#4254a7;stroke:#FFFFFF;stroke-width:3;}
-	.st2{stroke:#FFFFFF;stroke-width:4;}
+	.st2{fill: #d9d9d9; stroke:#FFFFFF;stroke-width:4;}
 	.st3{fill:#FCFCFC;}
 </style>
 <title>tidy-back</title>
