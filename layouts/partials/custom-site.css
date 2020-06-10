@@ -1,5 +1,5 @@
 /* Google Fonts */
-{{ .Param "headers.import" }}
+{{.Param "headers.import"}}
 
 body {
 	background-color: {{ .Param "colors.background" }};
@@ -41,7 +41,8 @@ a:hover {
   color: {{ .Param "colors.menu_title" }}
 }
 
-#rStudioHeader .productName:hover {
+#rStudioHeader .productName:hover,
+#rStudioHeader .productName:focus {
   color: {{ .Param "colors.menu_title_active" }}
 }
 
@@ -86,18 +87,56 @@ table tbody tr:nth-child(odd){
 }
 
 
-{{with .Param "headers.font-family"}}
+/* -----Accent Fonts------- */
 
-  /* Headers */
+{{with .Param "headers.font-family"}}
 
   h1, h2, 
   .article-title, 
-  div.tagline {
-   font-family: " {{ . }} ";
+  div.tagline, 
+  #TableOfContents a {
+    font-family: '{{ . }}';
+  }
+  
+  /* weight & sizing */
+  
+  h1, .article-title {
+    font-weight: bold;
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+  
+  #TableOfContents a {
+    font-size: 0.9rem;
   }
 
 {{end}}
 
+/* Accent color for headers, toc, etc. */
+
+{{with .Param "accent_color.color"}}
+
+h1,
+div.sectionTitle {
+  color: {{.}};
+}
+
+#TableOfContents a {
+  color: #19191999;
+}
+
+#TableOfContents a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+{{end}}
+
+/* Custom colored bullets */
 
 {{with .Param "bullets.color"}}
 
@@ -110,11 +149,43 @@ table tbody tr:nth-child(odd){
   	color: {{ . }} ;
   	display: inline-block;
   	width: 1.5em;
-  	margin-left: -1.5em;
+  	margin-left: -1.7em;
+  }
   	
   .article-content ul > li > p {
     display: inline;
-}
+  }
+
+  .article-content ul > li { /*to add back in space between bullet items that I took away by making p display inline */
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 
 {{end}}
+
+/* Uppercase Headers */
+
+{{with .Param "uppercase.text_transform"}}
+  
+  div.tagline {
+    font-size: 1.2rem !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2pt;
+  }
+  
+  #menu {
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+    font-size: 0.8rem !important;
+  }
+  
+  .sectionTitle,
+  .sectionTitle a {
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+{{end}}  
