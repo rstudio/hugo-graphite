@@ -1572,3 +1572,11 @@ table, tbody, tfoot, thead, tr, th, td {
 .fade {
   transition: opacity 0.15s linear;
 }
+
+/* Sticky sidebars */
+
+.column25, 
+.column25-left {
+  position: sticky;
+  top: 5.53em;
+}
