@@ -217,6 +217,14 @@ div.sectionTitle {
   .icon-attribution a {
     text-transform: {{ . }};
   }
+  
+  /* Getting Started / Tutorial sidebar title */
+  .column25-left .sectionTitle.start:first-of-type a {
+    text-transform: {{ . }};
+    letter-spacing: 2pt;
+    font-weight: bold;
+    font-size: 0.8rem !important;
+  }
 
 {{end}}  
 
