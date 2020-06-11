@@ -1573,12 +1573,17 @@ table, tbody, tfoot, thead, tr, th, td {
   transition: opacity 0.15s linear;
 }
 
-/* Sticky sidebars */
 
-.column25, 
-.column25-left {
+
+/*---- STICKY Sidebars for all w/ SMOOTH SCROLL-----*/
+
+.column25, .column25-left {
   position: sticky;
   top: 5.53em;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 
@@ -1666,3 +1671,145 @@ table, tbody, tfoot, thead, tr, th, td {
 /* GenericTraceback */ .chroma .gt { color: #0044dd }
 /* GenericUnderline */ .chroma .gl { text-decoration: underline }
 /* TextWhitespace */ .chroma .w { color: #bbbbbb }
+
+
+/* Learn + Tutorial layouts */
+
+/*-- Getting Started Page Left Sidebar -- */
+
+.column25-left .sectionTitle { /* Numbered content sections, hanging indent */
+  display: flex; 
+  text-transform: uppercase;
+  letter-spacing: 2pt;
+  font-size: 0.8rem !important;
+  font-weight: bold;
+}
+
+.column25-left .sectionTitle a {
+  font-family: 'Lato', sans-serif;
+  color: #1a162d99;
+  transition: color 0.3s;
+  font-size: 15px !important;
+  text-transform: none;
+  letter-spacing: 1pt;
+  font-weight: normal;
+}
+
+/* GET STARTED LABEL */
+/*.column25-left .sectionTitle.start:first-of-type a {
+  text-transform: uppercase;
+  letter-spacing: 2pt;
+  font-size: 0.8rem !important;
+  font-weight: bold;
+}*/
+
+.column25-left .sectionTitle a:hover:not(.current) {
+  /*color: black; */
+  text-decoration: none;
+}
+
+.column25-left .sectionTitle.current {
+  text-decoration: none;
+}
+
+/*.column25 {
+  padding-left: 3em;
+  border-left: solid #d9d9d9 1pt;
+}*/
+
+.column25-left {
+  padding-top: 20px;
+  /*padding-right: 3em; */
+  /*border-right: solid #d9d9d9 1pt;*/
+  max-width: 250px;
+}
+
+.column25-left .section {
+  margin-bottom: 20px;
+}
+
+/*----Learn List Page---- */
+
+.learn-list .article-title {
+  font-size: 1.1em;
+}
+
+.article-content.learn-list ul {
+    list-style: none;
+    /*border-left: 1pt solid #ffc0cb78; */ 
+}
+
+.article-content.learn-list ul li::before {
+  content: " ";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+}
+
+
+.learning-objective-text {
+  color: #1a162d9e;
+}
+
+.icon-attribution, 
+.icon-attribution a {
+  font-size: 9pt;
+  /*text-transform: uppercase;*/
+  /*color: #a19ea9; */
+}
+
+/* ----Learn subsection----*/
+
+
+/* LEARN THUMBNAILS */
+
+
+.flex-container.learn-list{
+  display: flex;
+}
+
+.image-container.learn-list {
+  width: 100px;
+  margin-right: 2em;
+}
+
+.image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    margin: 2em auto;
+}
+
+.learn-thumbnail {
+  display: inline;
+  margin: 0 auto;
+  width: auto;
+}
+
+/* "See all" link */
+
+.learn-list.itemDescription {
+  margin-left: 2em;
+}
+
+/* Learning Objectives */
+
+.learning-objective {
+  color: #1a162dcf;
+  font-size: 0.8em;
+  letter-spacing: 1pt;
+  display: inline-block;
+}
+
+.single-learning-objective-text {
+  color: #1a162d9e;
+  font-style: italic;
+}
+
+
+
+/* MISC */
+/* This is to specifically target the package tag links within Tutorial/Getting Started section.*/
+/* This is a pretty brittle style rule and should probably get replaced */
+
+.column75 > a {
+  color: #1a162d80; /* Specific to TM */ /* TODO parameterize color to be 80% opacity of body font */
+}
