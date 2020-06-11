@@ -1793,14 +1793,15 @@ html {
 /* Learning Objectives */
 
 .learning-objective {
-  color: #1a162dcf;
+  /*color: #1a162dcf;*/ /*specific to tM */
+  text-transform: uppercase;
   font-size: 0.8em;
   letter-spacing: 1pt;
   display: inline-block;
 }
 
 .single-learning-objective-text {
-  color: #1a162d9e;
+  /*color: #1a162d9e; */
   font-style: italic;
 }
 
