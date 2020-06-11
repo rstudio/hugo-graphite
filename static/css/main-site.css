@@ -1686,7 +1686,7 @@ html {
 }
 
 .column25-left .sectionTitle a {
-  font-family: 'Lato', sans-serif;
+  /*font-family: 'Lato', sans-serif; */ /* params */
   color: #1a162d99;
   transition: color 0.3s;
   font-size: 15px !important;
@@ -1695,7 +1695,7 @@ html {
   font-weight: normal;
 }
 
-/* GET STARTED LABEL */
+/* GET STARTED LABEL -- param */
 /*.column25-left .sectionTitle.start:first-of-type a {
   text-transform: uppercase;
   letter-spacing: 2pt;
@@ -1728,7 +1728,31 @@ html {
   margin-bottom: 20px;
 }
 
+/* TOC for tutorial page */
+
+div.tags-list {
+  margin-bottom: 0.5em;
+}
+
+/*
+.tutorial #TableOfContents ul li::before {
+	content: "\2022";
+	color: #CA225E;
+	display: inline-block;
+	width: 1.5em;
+	margin-left: -1.5em; 
+}
+
+.tutorial #TableOfContents ul {
+	list-style: none;
+	line-height: 1.6em;
+	padding-left: 2.5em;
+	margin-bottom: 0;
+} */
+
+
 /*----Learn List Page---- */
+
 
 .learn-list .article-title {
   font-size: 1.1em;

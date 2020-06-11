@@ -105,8 +105,9 @@ table tbody tr:nth-child(odd){
   h1, h2, 
   .article-title, 
   div.tagline, 
-  #TableOfContents a {
-    font-family: '{{ . }}';
+  #TableOfContents a, 
+  .column75 .sectionTitle /* e.g. Blog list title */ {
+    font-family: '{{ . }}' ;
   }
 
 {{end}}
@@ -164,7 +165,7 @@ div.sectionTitle {
 
 {{with .Param "bullets.color"}}
 
-  .article-content ul {
+  .article-content ul{
     list-style: none;
   }
 
@@ -184,6 +185,25 @@ div.sectionTitle {
     margin-top: 1em;
     margin-bottom: 1em;
   }
+  
+  
+  /* For tutorials toc bullets */
+  
+  .tutorial #TableOfContents ul li::before {
+  	content: "\2022";
+  	color: {{ . }} ;
+  	display: inline-block;
+  	width: 1.5em;
+  	margin-left: -1.5em; 
+  }
+
+  .tutorial #TableOfContents ul {
+  	list-style: none;
+  	/*line-height: 1.6em; */
+  	padding-left: 2.5em;
+  	margin-bottom: 0;
+  }
+    
 
 {{end}}
 
@@ -226,6 +246,14 @@ div.sectionTitle {
     font-size: 0.8rem !important;
   }
 
+  /* Learn list page title */
+  
+  h1.article-title {
+    letter-spacing: 2pt;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: {{ . }};
+  }
 
 {{end}}  
 
