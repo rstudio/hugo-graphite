@@ -21,7 +21,4 @@
     name = "Help"
     url = "/help/"
     weight = 5
-[[main]]
-    name = "Contribute"
-    url = "/contribute/"
-    weight = 6
+
