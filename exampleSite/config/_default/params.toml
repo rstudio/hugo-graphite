@@ -94,8 +94,15 @@ MathJaxVersion = "2.7.1"
 # Choose an accent font (article headers, h1, h2, table of contents etc.) with Google Fonts
 [headers]
     # Import a Google font and styles, e.g. "@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');"
-    import = "@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');"
-    font-family = "Libre Baskerville"
+    import = "@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');" #"@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');"
+    font-family = "Lato" #"Libre Baskerville"
+    # Bolded + Adjusted font-size
+    emphasis = false
+    
+[capitalization]
+# Make particular headers "uppercase" or "lowercase", or set = false (no quotes) for normal text
+    text_transform = "uppercase"
+
 
 # Used for headers, so should be accessibility-friendly
 [accent_color]
@@ -105,10 +112,6 @@ MathJaxVersion = "2.7.1"
     color = "#f6b73c"
     
     
-[capitalization]
-# Make particular headers uppercase, lowercase, or normal (set = false (no quotes))
-    text_transform = "uppercase"
-
 [hexes]
     thin_hex = true
 
@@ -117,4 +120,3 @@ MathJaxVersion = "2.7.1"
 # To turn on, set = "1px"
 # To turn off (default), set = false (no quotes)
     thin_lines = "1px"
-    
