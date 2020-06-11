@@ -16,6 +16,17 @@ a:hover {
   color: {{ .Param "colors.link_hover" }};
 }
 
+.column25-left .sectionTitle a:hover:not(.current) { /* Tutorial left sidebar */
+  color: {{ .Param "colors.text" }};
+}
+
+.icon-attribution, 
+.icon-attribution a {
+  color: {{ .Param "colors.text" }};
+  opacity: 75%;
+}
+
+
 /* Landing page content bands */
 
 #homeContent .band.first {
@@ -97,7 +108,11 @@ table tbody tr:nth-child(odd){
   #TableOfContents a {
     font-family: '{{ . }}';
   }
-  
+
+{{end}}
+
+{{if .Param "headers.emphasis"}}
+
   /* weight & sizing */
   
   h1, .article-title {
@@ -116,7 +131,7 @@ table tbody tr:nth-child(odd){
 
 {{end}}
 
-/* Accent color for headers, toc, etc. */
+/* ----Accent color for headers, toc, etc.----- */
 
 {{with .Param "accent_color.color"}}
 
@@ -132,6 +147,15 @@ div.sectionTitle {
 #TableOfContents a:hover {
   color: inherit;
   text-decoration: none;
+}
+
+
+.column25-left .sectionTitle.start:first-of-type a {
+  color: {{ . }};
+}
+
+.column25-left .sectionTitle.current {
+  color: {{ . }};
 }
 
 {{end}}
@@ -187,6 +211,12 @@ div.sectionTitle {
     font-size: 0.8rem;
     font-weight: bold;
   }
+  
+  
+  .icon-attribution, 
+  .icon-attribution a {
+    text-transform: {{ . }};
+  }
 
 {{end}}  
 
@@ -237,6 +267,15 @@ div.sectionTitle {
   .column25 {
     padding-left: 3em;
     border-left: solid #d9d9d9 {{ . }};
+  }
+  
+  .column25-left {
+    padding-right: 3em;
+    border-right: solid #d9d9d9 {{ . }};
+}
+
+  .article-content.learn-list ul {
+      border-left: {{ . }} solid #d9d9d9;
   }
 
 {{end}}
