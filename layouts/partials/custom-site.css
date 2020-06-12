@@ -98,15 +98,17 @@ table tbody tr:nth-child(odd){
 }
 
 
-/* -----Accent Fonts------- */
+/* ------Accent Font------- */
 
 {{with .Param "headers.font-family"}}
 
   h1, h2, 
-  .article-title, 
-  div.tagline, 
-  #TableOfContents a, 
-  .column75 .sectionTitle /* e.g. Blog list title */ {
+  .article-title, /* Title on single pages */
+  div.tagline, /* homepage bands */
+  #TableOfContents a, /* Sidebar on regular pages*/
+  .articleCategory a, /* Sidebar on Blog & Learn list pages */
+  .column75 .sectionTitle, /* e.g. Blog list title */
+  .column25-left .section:nth-child(n+2) .sectionTitle { /* Tutorial sidebar, all but 1st child */
     font-family: '{{ . }}' ;
   }
 
@@ -126,9 +128,6 @@ table tbody tr:nth-child(odd){
     font-size: 1.25em;
   }
   
-  #TableOfContents a {
-    font-size: 0.9rem;
-  }
 
 {{end}}
 
@@ -138,14 +137,20 @@ table tbody tr:nth-child(odd){
 
 h1,
 div.sectionTitle {
-  color: {{.}};
+  color: {{ . }};
 }
 
-#TableOfContents a {
+/* Sidebar links */
+
+#TableOfContents a,
+.articleCategory a,
+.column25-left .section:nth-child(n+2) a.sectionTitle { 
   color: #19191999;
 }
 
-#TableOfContents a:hover {
+#TableOfContents a:hover,
+.articleCategory a:hover,
+.column25-left .section:nth-child(n+2) .sectionTitle:hover {
   color: inherit;
   text-decoration: none;
 }
@@ -224,8 +229,8 @@ div.sectionTitle {
     font-size: 0.8rem !important;
   }
   
-  .sectionTitle,
-  .sectionTitle a {
+  .column25 .sectionTitle,
+  .column25 .sectionTitle a {
     text-transform: {{ . }};
     letter-spacing: 2pt;
     font-size: 0.8rem;
@@ -243,17 +248,9 @@ div.sectionTitle {
     text-transform: {{ . }};
     letter-spacing: 2pt;
     font-weight: bold;
-    font-size: 0.8rem !important;
-  }
-
-  /* Learn list page title */
-  
-  h1.article-title {
-    letter-spacing: 2pt;
     font-size: 0.8rem;
-    font-weight: bold;
-    text-transform: {{ . }};
   }
+  
 
 {{end}}  
 

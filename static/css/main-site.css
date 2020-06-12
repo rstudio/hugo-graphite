@@ -807,6 +807,7 @@ table.contentListing {
 .pagination a { padding: 0 .2em; }
 
 .articleCategory {
+  font-size: 0.88rem; 
   line-height: 35px;
   padding-left: 33px;
   background-repeat: no-repeat;
@@ -950,6 +951,10 @@ ul, ol {
 
 #TableOfContents ul {
   line-height: 2em;
+}
+
+#TableOfContents a {
+  font-size: 0.88rem;
 }
 
 li.last-item {
@@ -1679,20 +1684,19 @@ html {
 
 .column25-left .sectionTitle { /* Numbered content sections, hanging indent */
   display: flex; 
-  text-transform: uppercase;
-  letter-spacing: 2pt;
-  font-size: 0.8rem !important;
-  font-weight: bold;
+  /*text-transform: uppercase;*/
+  /*letter-spacing: 2pt; */ /*TM specific */
+  /*font-size: 15px;*/
 }
 
-.column25-left .sectionTitle a {
+.column25-left .section:nth-child(n+2) .sectionTitle { /* Tutorial sidebar, all but 1st child */ 
   /*font-family: 'Lato', sans-serif; */ /* params */
-  color: #1a162d99;
+ /* color: #1a162d99;
   transition: color 0.3s;
-  font-size: 15px !important;
   text-transform: none;
   letter-spacing: 1pt;
-  font-weight: normal;
+  font-weight: normal;*/
+  font-size: 15px !important;
 }
 
 /* GET STARTED LABEL -- param */
@@ -1702,6 +1706,8 @@ html {
   font-size: 0.8rem !important;
   font-weight: bold;
 }*/
+
+
 
 .column25-left .sectionTitle a:hover:not(.current) {
   /*color: black; */
