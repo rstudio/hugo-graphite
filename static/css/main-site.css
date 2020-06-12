@@ -1687,6 +1687,7 @@ html {
   /*text-transform: uppercase;*/
   /*letter-spacing: 2pt; */ /*TM specific */
   /*font-size: 15px;*/
+  font-weight: bold;
 }
 
 .column25-left .section:nth-child(n+2) .sectionTitle { /* Tutorial sidebar, all but 1st child */ 
@@ -1694,9 +1695,13 @@ html {
  /* color: #1a162d99;
   transition: color 0.3s;
   text-transform: none;
-  letter-spacing: 1pt;
-  font-weight: normal;*/
+  letter-spacing: 1pt; */
   font-size: 15px !important;
+  font-weight: bold;
+}
+
+.column25-left .section:nth-child(n+2) a.sectionTitle { /* Tutorial sidebar, all but 1st child */ 
+  font-weight: normal;
 }
 
 /* GET STARTED LABEL -- param */
