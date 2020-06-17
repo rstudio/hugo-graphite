@@ -103,12 +103,15 @@ table tbody tr:nth-child(odd){
 {{with .Param "headers.font-family"}}
 
   h1, h2, 
-  .article-title, /* Title on single pages */
+  .article-title:not(a), /* Title on single pages, but not the Learn list article links*/
   div.tagline, /* homepage bands */
   #TableOfContents a, /* Sidebar on regular pages*/
   .articleCategory a, /* Sidebar on Blog & Learn list pages */
   .column75 .sectionTitle, /* e.g. Blog list title */
-  .column25-left .section:nth-child(n+2) .sectionTitle { /* Tutorial sidebar, all but 1st child */
+  .column25-left .section:nth-child(n+2) .sectionTitle, /* Tutorial sidebar, all but 1st child */
+  a.learn-top-nav-item,  /* Bulleted toc items on Learn list page */
+  .itemTitle /* Blog list page titles & Learn List page subsection Titles */
+                            { 
     font-family: '{{ . }}' ;
   }
 
@@ -133,35 +136,85 @@ table tbody tr:nth-child(odd){
 
 /* ----Accent color for headers, toc, etc.----- */
 
-{{with .Param "accent_color.color"}}
+{{if .Param "accent_color.color_primary"}}
 
 h1,
 div.sectionTitle {
-  color: {{ . }};
+  color: {{ .Param "accent_color.color_primary" }};
 }
 
 /* Sidebar links */
 
+a.learn-top-nav-item, /* Learn list page bulleted toc */
 #TableOfContents a,
 .articleCategory a,
 .column25-left .section:nth-child(n+2) a.sectionTitle { 
   color: #19191999;
 }
 
+.column25-left .section:nth-child(n+2) a.sectionTitle.current { 
+  color: {{ .Param "accent_color.color_primary" }};
+}
+
+a.learn-top-nav-item:hover,
 #TableOfContents a:hover,
 .articleCategory a:hover,
-.column25-left .section:nth-child(n+2) .sectionTitle:hover {
-  color: inherit;
+.column25-left .section:nth-child(n+2) a.sectionTitle:hover {
+  color: {{ .Param "accent_color.color_secondary" }}; 
+  opacity: 95%;
   text-decoration: none;
 }
 
-
 .column25-left .sectionTitle.start:first-of-type a {
-  color: {{ . }};
+  color: {{ .Param "accent_color.color_primary" }};
 }
 
 .column25-left .sectionTitle.current {
-  color: {{ . }};
+  color: {{ .Param "accent_color.color_primary" }};
+}
+
+/* headers and accent colors */
+
+.article-title,             /* Most page titles */
+.column75 div.sectionTitle {  /* Learn page section title */
+  color: {{ .Param "accent_color.color_primary" }};
+}
+
+h2 {
+  color: {{ .Param "accent_color.color_secondary" }};
+}
+
+.itemTitle a { /* For Learn Page headers */
+  color: {{ .Param "accent_color.color_secondary" }};
+}
+
+.itemTitle a:hover { /* For Learn List Page headers */
+  color: {{ .Param "accent_color.color_secondary" }};
+  opacity: 80%;
+  text-decoration: none;
+}
+
+h3 {
+  color {{ .Param "accent_color.color_secondary" }};
+  opacity: 90%;
+}
+
+h3 a {
+  color: {{ .Param "accent_color.color_primary" }};
+  /*text-transform: none;
+  font-size: 1.5em;
+  letter-spacing: normal; */ /* was in tm, but check if i need here? */
+}
+
+h4 {
+  color {{ .Param "accent_color.color_secondary" }};
+  opacity: 90%;
+}
+
+/* tutorial package link tags*/
+
+.tags-list a {
+  color: black;
 }
 
 {{end}}
@@ -192,9 +245,8 @@ div.sectionTitle {
   }
   
   
-  /* For tutorials toc bullets */
-  
-  .tutorial #TableOfContents ul li::before {
+  .learn-top-nav ul li::before, /* For learn list page */
+  .tutorial #TableOfContents ul li::before { /* For tutorials toc bullets */
   	content: "\2022";
   	color: {{ . }} ;
   	display: inline-block;
@@ -202,7 +254,9 @@ div.sectionTitle {
   	margin-left: -1.5em; 
   }
 
-  .tutorial #TableOfContents ul {
+
+.learn-top-nav ul,
+.tutorial #TableOfContents ul {
   	list-style: none;
   	/*line-height: 1.6em; */
   	padding-left: 2.5em;
@@ -237,7 +291,6 @@ div.sectionTitle {
     font-weight: bold;
   }
   
-  
   .icon-attribution, 
   .icon-attribution a {
     text-transform: {{ . }};
@@ -250,6 +303,8 @@ div.sectionTitle {
     font-weight: bold;
     font-size: 0.8rem;
   }
+  
+  /*  */
   
 
 {{end}}  

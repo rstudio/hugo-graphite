@@ -949,10 +949,12 @@ ul, ol {
   margin-bottom: 0em; 
 }
 
+.learn-top-nav ul,
 #TableOfContents ul {
   line-height: 2em;
 }
 
+a.learn-top-nav-item,
 #TableOfContents a {
   font-size: 15px;
 }
@@ -1828,7 +1830,8 @@ div.tags-list {
 /* Learning Objectives */
 
 .learning-objective {
-  /*color: #1a162dcf;*/ /*specific to tM */
+  color: black; 
+  opacity: 75%;
   text-transform: uppercase;
   font-size: 0.8em;
   letter-spacing: 1pt;
