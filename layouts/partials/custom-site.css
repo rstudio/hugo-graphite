@@ -3,7 +3,7 @@
 
 body {
 	background-color: {{ .Param "colors.background" }};
-	color: {{ .Param "colors.text" }}
+	color: {{ .Param "colors.text" }};
 }
 
 /* Links */
@@ -30,15 +30,15 @@ a:hover {
 /* Landing page content bands */
 
 #homeContent .band.first {
-  background-color: {{ .Param "colors.home_section_odd" }}
+  background-color: {{ .Param "colors.home_section_odd" }};
 }
 
 #homeContent .band.second {
-  background-color: {{ .Param "colors.home_section_even" }}
+  background-color: {{ .Param "colors.home_section_even" }};
 }
 
 #homeContent .band.third {
-  background-color: {{ .Param "colors.home_section_odd" }}
+  background-color: {{ .Param "colors.home_section_odd" }};
 }
 
 /* Top navigation bar menu */
@@ -49,12 +49,12 @@ a:hover {
 }
 
 #rStudioHeader .productName {
-  color: {{ .Param "colors.menu_title" }}
+  color: {{ .Param "colors.menu_title" }};
 }
 
 #rStudioHeader .productName:hover,
 #rStudioHeader .productName:focus {
-  color: {{ .Param "colors.menu_title_active" }}
+  color: {{ .Param "colors.menu_title_active" }};
 }
 
 #rStudioHeader #menu .menuItem.a {
@@ -138,84 +138,84 @@ table tbody tr:nth-child(odd){
 
 {{if .Param "accent_color.color_primary"}}
 
-h1,
-div.sectionTitle {
-  color: {{ .Param "accent_color.color_primary" }};
-}
-
-/* Sidebar links */
-
-a.learn-top-nav-item, /* Learn list page bulleted toc */
-#TableOfContents a,
-.articleCategory a,
-.column25-left .section:nth-child(n+2) a.sectionTitle { 
-  color: #19191999;
-}
-
-.column25-left .section:nth-child(n+2) a.sectionTitle.current { 
-  color: {{ .Param "accent_color.color_primary" }};
-}
-
-a.learn-top-nav-item:hover,
-#TableOfContents a:hover,
-.articleCategory a:hover,
-.column25-left .section:nth-child(n+2) a.sectionTitle:hover {
-  color: {{ .Param "accent_color.color_secondary" }}; 
-  opacity: 95%;
-  text-decoration: none;
-}
-
-.column25-left .sectionTitle.start:first-of-type a {
-  color: {{ .Param "accent_color.color_primary" }};
-}
-
-.column25-left .sectionTitle.current {
-  color: {{ .Param "accent_color.color_primary" }};
-}
-
-/* headers and accent colors */
-
-.article-title,             /* Most page titles */
-.column75 div.sectionTitle {  /* Learn page section title */
-  color: {{ .Param "accent_color.color_primary" }};
-}
-
-h2 {
-  color: {{ .Param "accent_color.color_secondary" }};
-}
-
-.itemTitle a { /* For Learn Page headers */
-  color: {{ .Param "accent_color.color_secondary" }};
-}
-
-.itemTitle a:hover { /* For Learn List Page headers */
-  color: {{ .Param "accent_color.color_secondary" }};
-  opacity: 80%;
-  text-decoration: none;
-}
-
-h3 {
-  color {{ .Param "accent_color.color_secondary" }};
-  opacity: 90%;
-}
-
-h3 a {
-  color: {{ .Param "accent_color.color_primary" }};
-  /*text-transform: none;
-  font-size: 1.5em;
-  letter-spacing: normal; */ /* was in tm, but check if i need here? */
-}
-
-h4 {
-  color {{ .Param "accent_color.color_secondary" }};
-  opacity: 90%;
-}
-
-/* tutorial package link tags*/
-
-.tags-list a {
-  color: black;
-}
+  h1,
+  div.sectionTitle {
+    color: {{ .Param "accent_color.color_primary" }};
+  }
+  
+  /* Sidebar links */
+  
+  a.learn-top-nav-item, /* Learn list page bulleted toc */
+  #TableOfContents a,
+  .articleCategory a,
+  .column25-left .section:nth-child(n+2) a.sectionTitle { 
+    color: #19191999;
+  }
+  
+  .column25-left .section:nth-child(n+2) a.sectionTitle.current { 
+    color: {{ .Param "accent_color.color_primary" }};
+  }
+  
+  a.learn-top-nav-item:hover,
+  #TableOfContents a:hover,
+  .articleCategory a:hover,
+  .column25-left .section:nth-child(n+2) a.sectionTitle:hover {
+    color: {{ .Param "accent_color.color_secondary" }}; 
+    opacity: 95%;
+    text-decoration: none;
+  }
+  
+  .column25-left .sectionTitle.start:first-of-type a {
+    color: {{ .Param "accent_color.color_primary" }};
+  }
+  
+  .column25-left .sectionTitle.current {
+    color: {{ .Param "accent_color.color_primary" }};
+  }
+  
+  /* headers and accent colors */
+  
+  .article-title,             /* Most page titles */
+  .column75 div.sectionTitle {  /* Learn page section title */
+    color: {{ .Param "accent_color.color_primary" }};
+  }
+  
+  h2 {
+    color: {{ .Param "accent_color.color_secondary" }};
+  }
+  
+  .itemTitle a { /* For Learn Page headers */
+    color: {{ .Param "accent_color.color_secondary" }};
+  }
+  
+  .itemTitle a:hover { /* For Learn List Page headers */
+    color: {{ .Param "accent_color.color_secondary" }};
+    opacity: 80%;
+    text-decoration: none;
+  }
+  
+  h3 {
+    color {{ .Param "accent_color.color_secondary" }};
+    opacity: 90%;
+  }
+  
+  h3 a {
+    color: {{ .Param "accent_color.color_primary" }};
+    /*text-transform: none;
+    font-size: 1.5em;
+    letter-spacing: normal; */ /* was in tm, but check if i need here? */
+  }
+  
+  h4 {
+    color {{ .Param "accent_color.color_secondary" }};
+    opacity: 90%;
+  }
+  
+  /* tutorial package link tags*/
+  
+  .tags-list a {
+    color: black;
+  }
 
 {{end}}
 
