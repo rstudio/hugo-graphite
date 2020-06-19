@@ -926,15 +926,15 @@ h1 {
   margin-bottom: .5em; }
 
 h2 {
-  font-size: 2.0em;
+  font-size: 1.3em; /*2.0 */
   margin-bottom: 1em; }
 
 h3 {
-  font-size: 1.6em;
+  font-size: 1.1em; /*1.6*/
   margin-bottom: .5em; }
 
 h4 {
-  font-size: 1.2em;
+  font-size: 1.1em; /*1.1*/
   margin-bottom: .5em; }
 
 p {
