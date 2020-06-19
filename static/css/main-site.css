@@ -1743,7 +1743,7 @@ html {
 
 /* package tag links at top of Tutorial Pages */
 
-div.tags-list {
+.tags-list {
   margin-bottom: 20px;
 }
 

@@ -214,13 +214,18 @@ table tbody tr:nth-child(odd){
   
   /* taxonomy tags, e.g. tutorial package links*/
   
+  .tags-list .learning-objective {
+    color: {{ .Param "accent_color.color_secondary" }};
+    opacity: 85%;
+  }
+  
   .tags-list a {
     color: {{ .Param "accent_color.color_secondary" }};
     opacity: 56%;
   }
   
   .tags-list a:hover {
-    opacity: 100%;
+    opacity: 95%;
   }
 
 {{end}}
