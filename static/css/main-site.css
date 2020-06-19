@@ -1684,11 +1684,11 @@ html {
 
 /*-- Getting Started Page Left Sidebar -- */
 
-.column25-left .sectionTitle { /* Numbered content sections, hanging indent */
+.column25-left .sectionTitle { /* Numbers in sidebar */
   display: flex; 
   /*text-transform: uppercase;*/
   /*letter-spacing: 2pt; */ /*TM specific */
-  /*font-size: 15px;*/
+  font-size: 0.8rem;
   font-weight: bold;
 }
 
@@ -1698,12 +1698,11 @@ html {
   transition: color 0.3s;
   text-transform: none;
   letter-spacing: 1pt; */
-  font-size: 15px !important;
-  font-weight: bold;
 }
 
-.column25-left .section:nth-child(n+2) a.sectionTitle { /* Tutorial sidebar, all but 1st child */ 
+.column25-left .section:nth-child(n+2) a.sectionTitle { /* Tutorial sidebar, all but 1st child -- Words, not number prefix */ 
   font-weight: normal;
+  font-size: 15px;
 }
 
 /* GET STARTED LABEL -- param */
