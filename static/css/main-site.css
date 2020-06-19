@@ -1741,10 +1741,18 @@ html {
   margin-bottom: 20px;
 }
 
-/* TOC for tutorial page */
+/* package tag links at top of Tutorial Pages */
 
 div.tags-list {
   margin-bottom: 20px;
+}
+
+.tags-list a {
+	transition: color 0.3s;
+}
+
+.tags-list a:hover {
+	text-decoration: none;
 }
 
 /*
@@ -1764,12 +1772,14 @@ div.tags-list {
 } */
 
 
-/*----Learn List Page---- */
+/*----Learn---- */
 
 
 .learn-list .article-title {
   font-size: 1.1em;
 }
+
+/* List of articles accompanying learn thumbnails */
 
 .article-content.learn-list ul {
     list-style: none;
@@ -1778,7 +1788,7 @@ div.tags-list {
 
 .article-content.learn-list ul li::before {
   content: " ";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-}
+} 
 
 
 .learning-objective-text {
@@ -1843,12 +1853,3 @@ div.tags-list {
   font-style: italic;
 }
 
-
-
-/* MISC */
-/* This is to specifically target the package tag links within Tutorial/Getting Started section.*/
-/* This is a pretty brittle style rule and should probably get replaced */
-
-.column75 > a {
-  color: #1a162d80; /* Specific to TM */ /* TODO parameterize color to be 80% opacity of body font */
-}

@@ -110,7 +110,8 @@ table tbody tr:nth-child(odd){
   .column75 .sectionTitle, /* e.g. Blog list title */
   .column25-left .section:nth-child(n+2) .sectionTitle, /* Tutorial sidebar, all but 1st child */
   a.learn-top-nav-item,  /* Bulleted toc items on Learn list page */
-  .itemTitle /* Blog list page titles & Learn List page subsection Titles */
+  .itemTitle, /* Blog list page titles & Learn List page subsection Titles */
+  .tags-list a    /* taxonomy tags on Tutorial page, e.g. packages */                
                             { 
     font-family: '{{ . }}' ;
   }
@@ -211,10 +212,15 @@ table tbody tr:nth-child(odd){
     opacity: 90%;
   }
   
-  /* tutorial package link tags*/
+  /* taxonomy tags, e.g. tutorial package links*/
   
   .tags-list a {
-    color: black;
+    color: {{ .Param "accent_color.color_secondary" }};
+    opacity: 56%;
+  }
+  
+  .tags-list a:hover {
+    opacity: 100%;
   }
 
 {{end}}
