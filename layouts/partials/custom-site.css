@@ -223,9 +223,9 @@ table tbody tr:nth-child(odd){
 
 {{with .Param "bullets.color"}}
 
-  .article-content ul{
+  /*.article-content ul{
     list-style: none;
-  }
+  } */
 
   .article-content ul li::before {
   	content: "\2022";
@@ -254,13 +254,13 @@ table tbody tr:nth-child(odd){
   	margin-left: -1.5em; 
   }
 
-
+.article-content ul, /* Regular lists */
 .learn-top-nav ul,
 .tutorial #TableOfContents ul {
   	list-style: none;
-  	/*line-height: 1.6em; */
+  	line-height: 1.6em;
   	padding-left: 2.5em;
-  	margin-bottom: 0;
+  	/* margin-bottom: 0; */
   }
     
 
