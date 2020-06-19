@@ -872,6 +872,7 @@ table.contentListing {
     margin: 20px 0 0 210px; }
     
 .package-info h3 {
+  font-size: 1.5em;
 	padding-top: 72px;
 	margin-top: -72px;
 }
@@ -926,15 +927,15 @@ h1 {
   margin-bottom: .5em; }
 
 h2 {
-  font-size: 1.3em; /*2.0 */
+  font-size: 1.7em; /*2.0 */
   margin-bottom: 1em; }
 
 h3 {
-  font-size: 1.1em; /*1.6*/
+  font-size: 1.3em; /*1.6*/
   margin-bottom: .5em; }
 
 h4 {
-  font-size: 1.1em; /*1.1*/
+  font-size: 1.3em; /*1.1*/
   margin-bottom: .5em; }
 
 p {
