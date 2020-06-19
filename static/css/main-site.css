@@ -807,7 +807,7 @@ table.contentListing {
 .pagination a { padding: 0 .2em; }
 
 .articleCategory {
-  font-size: 0.88em; /* TODO: try hardcoding to 15px */
+  font-size: 15px;
   line-height: 35px;
   padding-left: 33px;
   background-repeat: no-repeat;
