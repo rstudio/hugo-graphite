@@ -904,6 +904,13 @@ table.contentListing {
 
 /* content */
 
+.article-footer {
+  border-top: solid #d9d9d9 1pt;
+	margin-top: 30px;
+	padding-top: 10px;
+	font-size: .9em;
+	color: #707070;
+}
 
 .article-title {
   font-size: 2.2em;
@@ -1362,12 +1369,37 @@ table, tbody, tfoot, thead, tr, th, td {
   border: 0;
 }
 
+
 /* Makes dropdown menus not look bad when titles are long */
 
 .selectize-dropdown, 
 .selectize-input.items.not-full.has-options.has-items {
     font-size: 0.8rem !important;
     text-transform: none !important;
+}
+
+/* ----DataTables formatting----*/
+
+table.dataTable {
+  display: block;
+  width: 770px;
+	text-align: left;
+	font-size: 1rem;
+	max-width: 770px;
+	table-layout: fixed;
+	word-wrap:break-word;
+	overflow-x: auto;
+}
+
+table.dataTable tbody td {
+	line-height: 1.5em;
+}
+
+table.dataTable thead th, 
+table.dataTable thead td,
+table.dataTable.no-footer, 
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+	border-bottom: 1px solid #a19ea936 !important;
 }
 
 
@@ -1873,3 +1905,50 @@ html {
   font-style: italic;
 }
 
+/* Media Queries */
+
+/*----Mobile display----*/
+
+@media screen and (max-width: 1023px) {
+
+  #homeContent .bookCover {
+    margin: 40px auto;
+  }
+  
+  .column25 {
+  	padding-left: 0em;
+  	border-left: none;
+  }
+
+  .column25-left {
+    position: static;
+    padding-top: 50px;
+  	padding-right: 0em;
+  	border-right: none; 
+  	max-width: 100%;
+  	border-top: 1px solid #d9d9d9;
+  }
+  
+  .column25-left .section .section {
+   margin-bottom: 25px;
+  }
+
+  .start {
+	flex-direction: column-reverse;
+  }
+
+/* dont show anchor link on small screens */
+  h2 a.hanchor {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .flex-container.learn-list {
+    display: block;
+  }
+  
+  .image-container.learn-list {
+    margin: 0 auto;
+  }
+}
