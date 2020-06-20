@@ -426,3 +426,10 @@ table tbody tr:nth-child(odd){
       color: {{ . }};
   }
 {{end}}
+
+
+{{with .Param "event_stickies.text_color"}}
+  .section .event {
+      color: {{ . }};
+  }
+{{end}}
