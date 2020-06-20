@@ -383,49 +383,42 @@ table tbody tr:nth-child(odd){
 /*--- Event Stickies ---*/
 
 {{with .Param "event_stickies.background"}}
-
   .event {
     -moz-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.1);
   }
-
 {{end}}
 
-{{if .Param "event_stickies.straight"}}
 
+{{if .Param "event_stickies.straight"}}
   .event:nth-child(2) {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); 
   }
-   
   .event:nth-child(3) {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); 
   }
- 
 {{end}}
 
-{{with .Param "event_stickies.background"}}
 
+{{with .Param "event_stickies.background"}}
   .section .event {
     background-color: {{ . }};
   }
-
 {{end}}
+
 
 {{with .Param "event_stickies.border_color"}}
-
   .section .event {
-    border-top: 7pt solid {{.}};
+    border-top: 7pt solid {{ . }};
   }
-
 {{end}}
 
+
 {{with .Param "event_stickies.links"}}
-
   .section .event a{
-      color: {{.}};
+      color: {{ . }};
   }
-
 {{end}}
