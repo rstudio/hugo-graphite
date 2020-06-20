@@ -382,17 +382,17 @@ table tbody tr:nth-child(odd){
 
 /*--- Event Stickies ---*/
 
-{{with .Param "event-stickies.background"}}
+{{with .Param "event_stickies.background"}}
 
-.event {
-  -moz-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.1);
-}
+  .event {
+    -moz-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.1);
+  }
 
 {{end}}
 
-{{if .Param "event-stickies.straight"}}
+{{if .Param "event_stickies.straight"}}
 
   .event:nth-child(2) {
     -webkit-transform: rotate(360deg);
@@ -410,7 +410,7 @@ table tbody tr:nth-child(odd){
 
 {{end}}
 
-{{with .Param "event-stickies.border_color"}}
+{{with .Param "event_stickies.border_color"}}
 
   .section .event {
     border-top: 7pt solid {{.}};
