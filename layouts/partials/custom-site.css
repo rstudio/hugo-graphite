@@ -111,7 +111,7 @@ table tbody tr:nth-child(odd){
   div.tagline, /* homepage bands */
   #TableOfContents a, /* Sidebar on regular pages*/
   .articleCategory a, /* Sidebar on Blog & Learn list pages */
-  .column75 .sectionTitle, /* e.g. Blog list title */
+  .column75 .sectionTitle:not(.back-to), /* e.g. Blog list title, NOT "back to learn" */
   .column25-left .section:nth-child(n+2) .sectionTitle, /* Tutorial sidebar, all but 1st child */
   a.learn-top-nav-item,  /* Bulleted toc items on Learn list page */
   .itemTitle, /* Blog list page titles & Learn List page subsection Titles */
@@ -313,6 +313,14 @@ table tbody tr:nth-child(odd){
   
   /* Getting Started / Tutorial sidebar title */
   .column25-left .sectionTitle.start:first-of-type a {
+    text-transform: {{ . }};
+    letter-spacing: 2pt;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  
+  /*.e.g "Back to Learn" link */
+  .column75 .section .sectionTitle a {
     text-transform: {{ . }};
     letter-spacing: 2pt;
     font-weight: bold;

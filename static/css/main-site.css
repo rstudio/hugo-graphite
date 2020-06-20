@@ -1917,6 +1917,10 @@ html {
   font-style: italic;
 }
 
+.column75 .section .sectionTitle a {
+  font-size: 0.8rem;
+}
+
 /* Media Queries */
 
 /*----Mobile display----*/
