@@ -1362,6 +1362,15 @@ table, tbody, tfoot, thead, tr, th, td {
   border: 0;
 }
 
+/* Makes dropdown menus not look bad when titles are long */
+
+.selectize-dropdown, 
+.selectize-input.items.not-full.has-options.has-items {
+    font-size: 0.8rem !important;
+    text-transform: none !important;
+}
+
+
 /* from hugo-lithium theme */
 .nav-logo {
   float: left;
