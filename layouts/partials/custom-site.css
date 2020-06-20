@@ -16,6 +16,10 @@ a:hover {
   color: {{ .Param "colors.link_hover" }};
 }
 
+a:focus {
+  outline-color: {{ .Param "colors.link_hover" }};
+}
+
 .column25-left .sectionTitle a:hover:not(.current) { /* Tutorial left sidebar */
   color: {{ .Param "colors.text" }};
 }
