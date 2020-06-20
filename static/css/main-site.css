@@ -888,19 +888,25 @@ table.contentListing {
 
 @media screen and (max-width: 767px) {
   .package-section .package-section-info {
-    margin-bottom: 20px; }
+    margin-bottom: 20px; 
+  }
   .package-section .packages .package, .package-section .packages .package:first-of-type, .package-section .packages .package:last-of-type {
-    background-image: none; }
+    background-image: none !important; /* Overrides params */ 
+  }
   .package-section .packages .package {
     height: auto;
     overflow-y: auto;
-    margin-bottom: 20px; }
-    .package-section .packages .package .package-image {
-      position: static;
-      float: left;
-      margin-right: 20px; }
-    .package-section .packages .package .package-info {
-      margin: 0; } }
+    margin-bottom: 20px; 
+  }
+  .package-section .packages .package .package-image {
+    position: static;
+    float: left;
+    margin-right: 20px; 
+  }
+  .package-section .packages .package .package-info {
+    margin: 0; 
+  } 
+}
 
 /* content */
 
