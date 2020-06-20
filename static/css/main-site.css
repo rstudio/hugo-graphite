@@ -1923,8 +1923,8 @@ html {
   .column25-left {
     position: static;
     padding-top: 50px;
-  	padding-right: 0em;
-  	border-right: none; 
+  	padding-right: 0em !important; /*overrides params */
+  	border-right: none !important; /*overrides params */
   	max-width: 100%;
   	border-top: 1px solid #d9d9d9;
   }
