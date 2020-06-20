@@ -380,4 +380,48 @@ table tbody tr:nth-child(odd){
 
 {{end}}
 
+/*--- Event Stickies ---*/
 
+{{with .Param "event-stickies.background"}}
+
+.event {
+  -moz-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+{{end}}
+
+{{if .Param "event-stickies.straight"}}
+
+  .event:nth-child(2) {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); 
+  }
+   
+  .event:nth-child(3) {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); 
+  }
+  
+  .section .event {
+    background-color: {{ . }};
+  }
+
+{{end}}
+
+{{with .Param "event-stickies.border_color"}}
+
+  .section .event {
+    border-top: 7pt solid {{.}};
+  }
+
+{{end}}
+
+{{with .Param "event-stickies.links"}}
+
+  .section .event a{
+      color: {{.}};
+  }
+
+{{end}}
