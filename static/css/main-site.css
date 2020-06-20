@@ -1714,8 +1714,6 @@ html {
   font-weight: bold;
 }*/
 
-
-
 .column25-left .sectionTitle a:hover:not(.current) {
   /*color: black; */
   text-decoration: none;
@@ -1772,14 +1770,14 @@ html {
 } */
 
 
-/*----Learn---- */
+/*----Learn Pages---- */
 
 
 .learn-list .article-title {
   font-size: 1.1em;
 }
 
-/* List of articles accompanying learn thumbnails */
+/* List of article titles accompanying learn thumbnails */
 
 .article-content.learn-list ul {
     list-style: none;
@@ -1789,7 +1787,6 @@ html {
 .article-content.learn-list ul li::before {
   content: " ";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
 } 
-
 
 .learning-objective-text {
   color: #1a162d9e;
@@ -1802,11 +1799,8 @@ html {
   /*color: #a19ea9; */
 }
 
-/* ----Learn subsection----*/
-
 
 /* LEARN THUMBNAILS */
-
 
 .flex-container.learn-list{
   display: flex;
@@ -1818,11 +1812,11 @@ html {
 }
 
 .image-cropper {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    overflow: hidden;
-    margin: 2em auto;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  margin: 2em auto;
 }
 
 .learn-thumbnail {
