@@ -1922,8 +1922,8 @@ html {
   }
   
   .column25 {
-  	padding-left: 0em;
-  	border-left: none;
+  	padding-left: 0em !important; /*overrides params */
+  	border-left: none !important; /*overrides params */
   }
 
   .column25-left {
