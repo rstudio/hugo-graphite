@@ -1316,9 +1316,19 @@ table thead tr th{
   padding: 15px 13px;
 }
 
-table thead tr th:last-child{
+/*table thead tr th:last-child{
   padding: 15px 0;
+}*/
+
+
+table tbody tr td:last-child {
+  padding: 15px 13px;
 }
+
+table thead tr th:last-child {
+    padding: 15px 13px;
+}
+
 
 table tbody{
 }
