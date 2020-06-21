@@ -844,6 +844,7 @@ table.contentListing {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  max-width: none;
 }
 
 .article-header .photoCredit {
