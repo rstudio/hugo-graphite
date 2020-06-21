@@ -1039,8 +1039,9 @@ img {
   padding-left: 0; }
 
 /* Make spacing BETWEEN list items greater than wrapped lines WITHIN list items */
-
-#TableOfContents ul li {
+/* For text wrapping long category names */
+#TableOfContents ul li,  /* Most sidebars */
+.articleCategory { /* Sidebars with Categories */
   padding-bottom: 1.2em;
   line-height: 1.2rem;
 }
