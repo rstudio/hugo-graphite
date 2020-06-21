@@ -836,6 +836,8 @@ table.contentListing {
   border-top: 5px solid #e4e4e4;
   position: relative;
   overflow: hidden;
+      background-size: cover;
+      background-position: center center;
 }
 
 .article-header .photo img {
