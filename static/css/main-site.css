@@ -1766,7 +1766,7 @@ html {
 
 /* Learn + Tutorial layouts */
 
-/*-- Getting Started Page Left Sidebar -- */
+/*-- Getting Started Page Left Sidebar (Tutorial) -- */
 
 .column25-left .sectionTitle { /* Numbers in sidebar */
   display: flex; 
@@ -1852,6 +1852,13 @@ html {
 	margin-bottom: 0;
 } */
 
+.tutorial #TableOfContents ul li {
+  padding-bottom: 0.7em;
+}
+
+.learn-top-nav ul li {
+  padding-bottom: 0.4em;
+}
 
 /*----Learn Pages---- */
 
