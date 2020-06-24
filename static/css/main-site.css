@@ -1390,6 +1390,11 @@ table, tbody, tfoot, thead, tr, th, td {
 }
 
 
+table caption {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 /* Makes dropdown menus not look bad when titles are long */
 
 .selectize-dropdown, 
@@ -1929,7 +1934,45 @@ html {
   font-size: 0.8rem;
 }
 
-/* Media Queries */
+/*--------Shortcode Note boxes-----------*/
+
+div.note, 
+div.rstudio-tip, 
+div.warning {
+  padding: 1em;
+  margin: 1em 0;
+  padding-left: 100px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: 15px 1.5em;
+  min-height: 120px;
+  border-top: 7pt solid #a19ea936;
+  border: 1pt solid #d9d9d9;
+  max-width: 100%;
+  line-height: 1.75em;
+  font-size: 0.85em;
+}
+
+div.note {
+  background-image: url("../images/robot.png");
+}
+
+div.rstudio-tip {
+  background-image: url("../images/rstudio.png");
+}
+
+div.warning {
+  background-image: url("../images/error.png");
+}
+
+div.note code, 
+div.rstudio-tip code,
+div.warning code {
+  font-size: 1em;
+}
+
+
+
 
 /*----Mobile display----*/
 
