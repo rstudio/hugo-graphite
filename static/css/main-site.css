@@ -2023,16 +2023,16 @@ div.warning code {
   position: absolute;
 }
 
-.hanchor { /*for tutorial H2's with chain link */
-  font-size: 70%; 
+/*.hanchor { /* /*for tutorial H2's with chain link */
+ /* font-size: 70%; 
   opacity: 0.4;
   line-height: 1em;
-}
+} 
 
 .hanchor:hover { 
   text-decoration: none;
   opacity: 0.7;
-}
+} */
 
 h2:hover a { /* h2's that are anchored on learn list page */
   text-decoration: none;
@@ -2041,15 +2041,14 @@ h2:hover a { /* h2's that are anchored on learn list page */
 
 a > svg.anchor-symbol {
   color: transparent;
-  margin-bottom: .5rem;
   margin-left: .5rem;
-  fill: #d9d9d9;
+  fill: #d4d1d1;
+  height: 22px;
 }
 
-
 a > svg.anchor-symbol:hover {
-  fill: #404040;
-  transition: fill 0.3s ease;
+  fill: #404040a1;
+  transition: fill 0.6s ease;
 }
 
 
@@ -2084,9 +2083,9 @@ a > svg.anchor-symbol:hover {
   }
 
 /* dont show anchor link on small screens */
-  h2 a.hanchor {
+  /*h2 a.hanchor {
     visibility: hidden;
-  }
+  } */
 }
 
 @media screen and (max-width: 700px) {
