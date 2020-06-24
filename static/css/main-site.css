@@ -998,7 +998,10 @@ pre {
   word-wrap: normal;
   word-break: normal;
   border-radius: 3px;
-  border: 1px solid #e4e4e4; }
+  border: 1px solid #e4e4e4; 
+  white-space: pre-wrap; /* fix code scrolling */
+}
+
 
 /* this styles the code inside chunks */
 pre code {
