@@ -200,8 +200,8 @@ table tbody tr:nth-child(odd){
   }
   
   h3 {
-    color {{ .Param "accent_color.color_secondary" }};
-    opacity: 90%;
+    color: {{ .Param "accent_color.color_secondary" }};
+    opacity: 95%;
   }
   
   h3 a {
@@ -212,7 +212,7 @@ table tbody tr:nth-child(odd){
   }
   
   h4 {
-    color {{ .Param "accent_color.color_secondary" }};
+    color: {{ .Param "accent_color.color_secondary" }};
     opacity: 90%;
   }
   
