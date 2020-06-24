@@ -1977,7 +1977,23 @@ div.warning code {
   font-size: 1em;
 }
 
+/*----ANCHORS----*/
 
+.anchor-container {
+  position: relative;
+}
+
+.anchor {
+  top: -100px; /* absolute value must be > than navbar */
+  position: absolute;
+}
+
+.hanchor { 
+  font-size: 100%; 
+  /*visibility: hidden; */
+  color: #1a162d50;
+  opacity: 0.6;
+}
 
 
 /*----Mobile display----*/
