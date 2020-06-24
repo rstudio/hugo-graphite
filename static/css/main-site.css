@@ -1312,8 +1312,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   font-weight: inherit
-}table thead{
-}table thead th{
+}
+
+table thead{
+}
+
+table thead th{
 font-weight: inherit;
 }
 
@@ -1375,9 +1379,9 @@ table tbody tr td{
   padding: 15px;
 }
 
-table tbody tr td:last-child{
+/*table tbody tr td:last-child{
   padding: 15px 0;
-}
+}*/
 
 table, tbody, tfoot, thead, tr, th, td {
   margin: 0;
