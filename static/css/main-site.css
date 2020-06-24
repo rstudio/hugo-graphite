@@ -1988,7 +1988,7 @@ div.warning code {
   position: absolute;
 }
 
-.hanchor { 
+.hanchor { /*for tutorial H2's with chain link */
   font-size: 70%; 
   opacity: 0.4;
   line-height: 1em;
@@ -2011,15 +2011,10 @@ a > svg.anchor-symbol {
   fill: #d9d9d9;
 }
 
-h2:hover a { 
-  /*visibility: visible;*/
-  text-decoration: none;
-  opacity: 0.9;
-}
 
 a > svg.anchor-symbol:hover {
   fill: #404040;
-  transition: fill 0.6s ease;
+  transition: fill 0.3s ease;
 }
 
 
