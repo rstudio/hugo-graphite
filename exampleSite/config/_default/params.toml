@@ -98,11 +98,10 @@ MathJaxVersion = "2.7.1"
     # font-family = "Lato"
     import = "@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');"
     font-family = "Libre Baskerville"
-    # Bolded + Adjusted font-size
-    emphasis = false
-    
+
 [capitalization]
-# Make particular headers "uppercase" or "lowercase", or set = false (no quotes) for normal text
+# Make particular headers "uppercase" or "lowercase"
+# set = false (no quotes) for normal text
     text_transform = "uppercase"
 
 [accent_color]
