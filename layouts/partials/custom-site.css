@@ -259,7 +259,6 @@ table tbody tr:nth-child(odd){
     margin-bottom: 1em;
   }
   
-  
   .learn-top-nav ul li::before, /* For learn list page */
   .tutorial #TableOfContents ul li::before { /* For tutorials toc bullets */
   	content: "\2022";
@@ -277,6 +276,14 @@ table tbody tr:nth-child(odd){
   	padding-left: 2.5em;
   	/* margin-bottom: 0; */
   }
+  
+/* But also give div tip outline the same color as bullets*/
+
+div.note, 
+div.rstudio-tip, 
+div.warning {
+  border-color: {{ . }} ;
+}
     
 
 {{end}}
