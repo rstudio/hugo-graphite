@@ -266,7 +266,7 @@ table tbody tr:nth-child(odd){
   	color: {{ . }} ;
   	display: inline-block;
   	width: 1.5em;
-  	margin-left: -1.5em; 
+  	margin-left: -1.8em; 
   }
 
 .article-content ul, /* Regular lists */
