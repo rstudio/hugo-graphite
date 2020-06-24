@@ -887,20 +887,20 @@ table.contentListing {
   padding-top: 5px;
 }
 
-.itemMeta .itemDescription {
+.listItem .itemDetails .itemMeta .itemDescription {
   padding-top: 5px;
-  font-size: 15px !important;
+  font-size: 15px;
   opacity: 0.95;
+  white-space: normal;
 }
 
-.itemMeta .itemDescription .readMore {
-  font-size: 15px !important;
+.listItem .itemDetails .itemMeta .itemDescription .readMore {
+  font-size: 15px;
   opacity: 0.7;
-
 }
 
-.itemMeta .itemDate {
-  font-size: 13px !important;
+.listItem .itemDetails .itemMeta .itemDate {
+  font-size: 13px;
   letter-spacing: 0.25pt;
 }
 
