@@ -2048,7 +2048,7 @@ a > svg.anchor-symbol {
 
 a > svg.anchor-symbol:hover {
   fill: #404040d1;
-  transition: fill 0.6s ease;
+  transition: fill 0.3s ease;
 }
 
 
