@@ -1,5 +1,5 @@
 /* Google Fonts */
-{{ .Param "headers.import" }}
+{{ with .Param "headers.import" }} {{ . }} {{end}}
 
 body {
 	background-color: {{ .Param "colors.background" }};
