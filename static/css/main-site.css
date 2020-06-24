@@ -880,6 +880,30 @@ table.contentListing {
 	margin-top: -72px;
 }
 
+/* Blog list page */
+
+.itemMeta .author {
+  font-size: 17px !important;
+  padding-top: 5px;
+}
+
+.itemMeta .itemDescription {
+  padding-top: 5px;
+  font-size: 15px !important;
+  opacity: 0.95;
+}
+
+.itemMeta .itemDescription .readMore {
+  font-size: 15px !important;
+  opacity: 0.7;
+
+}
+
+.itemMeta .itemDate {
+  font-size: 13px !important;
+  letter-spacing: 0.25pt;
+}
+
 /* CSS for centering images in blog posts */
 
 .article-content img {
@@ -2071,4 +2095,13 @@ a > svg.anchor-symbol:hover {
   .image-container.learn-list {
     margin: 0 auto;
   }
+  
+  .mobile-only {
+    display: block;
+  }
+}
+
+/* hide mobile-only when not on mobile */
+.mobile-only {
+  display: none;
 }
