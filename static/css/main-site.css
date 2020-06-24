@@ -845,6 +845,7 @@ table.contentListing {
   top: 50%;
   transform: translateY(-50%);
   max-width: none;
+  height: 200px;
 }
 
 .article-header .photoCredit {
@@ -883,7 +884,7 @@ table.contentListing {
 /* Blog list page */
 
 .listItem .itemDetails .itemMeta .author {
-  font-size: 15px;
+  font-size: 17px;
   padding-top: 5px;
   color: #484848;
 }
