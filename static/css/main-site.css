@@ -882,15 +882,16 @@ table.contentListing {
 
 /* Blog list page */
 
-.itemMeta .author {
-  font-size: 17px !important;
+.listItem .itemDetails .itemMeta .author {
+  font-size: 15px;
   padding-top: 5px;
+  color: #484848;
 }
 
 .listItem .itemDetails .itemMeta .itemDescription {
-  padding-top: 5px;
+  padding-top: 10px;
   font-size: 15px;
-  opacity: 0.95;
+  color: #636363;
   white-space: normal;
 }
 
