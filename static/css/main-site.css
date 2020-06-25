@@ -801,6 +801,13 @@ table.contentListing {
     margin-bottom: .375rem;
     color: #505050; }
 
+/* Restore superscript styling */
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
+} 
+
 /* pagination */
 .pagination { text-align: center; }
 .pagination li { display: inline; }
