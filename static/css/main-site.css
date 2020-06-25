@@ -817,6 +817,13 @@ sup {
 .pagination li { display: inline; }
 .pagination a { padding: 0 .2em; }
 
+
+ul.pagination li.page-item.active {
+  font-weight: bold;
+}
+
+
+
 .articleCategory {
   font-size: 15px;
   line-height: 35px;
@@ -835,6 +842,13 @@ sup {
     background-image: url(images/tidyCategoryOther.svg); }
   .articleCategory.deep-dive {
     background-image: url(images/tidyCategoryDeepDive.svg); }
+
+/* Hack so the svg's in bullets aren't given display block */
+.article-content li img {
+  display: inline;
+  margin-left: 0;
+  margin-right: 0;
+}
 
 .article-title {
   margin-top: 0px; 
