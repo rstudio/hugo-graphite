@@ -113,6 +113,10 @@ html, body {
 
 .full {
   margin: 30px 0 30px 0; }
+  
+body {
+  color: #404040;
+}
 
 a {
   color: #4c83b6;
