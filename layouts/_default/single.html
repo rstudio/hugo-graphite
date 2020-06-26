@@ -37,6 +37,18 @@
 
       <div class="article-content">
       {{ .Content }}
+      
+      <div class="tags-list">
+      
+      <h2 class="learning-objective">Categories: </h2>
+      {{ range $i, $tags := (.GetTerms "tags") }}
+        {{- if $i -}}, {{ end -}}
+        {{ with $tags }}
+        <a href="{{ .Permalink }}">{{- .LinkTitle -}}</a>
+        {{- end -}}
+      {{- end -}}
+      </div>
+      
       </div>
 
 
