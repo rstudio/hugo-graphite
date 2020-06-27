@@ -1998,6 +1998,20 @@ html {
   font-size: 0.8rem;
 }
 
+/* Blog tags for categories at bottom of article */
+
+.tags-list.blog-tags {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: solid 1pt #d9d9d9;
+} 
+
+
+.tags-list.blog-tags .learning-objective {
+  margin-top: 1em;
+  padding-top: 0;
+}
+
 /*--------Shortcode Note boxes-----------*/
 
 div.note, 
