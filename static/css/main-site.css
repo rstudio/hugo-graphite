@@ -634,7 +634,10 @@ a {
     flex-shrink: 0;
     width: 150px;
     height: 150px;
-    margin: 0 30px 15px 0; }
+    margin: 0 30px 15px 0;
+    background-size: contain; /* In case background images are still used */
+    background-position: center;
+  }
   .listItem .itemDetails {
     width: 100%;
     font-size: .875rem;
