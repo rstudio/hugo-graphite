@@ -11,9 +11,7 @@
         <div>{{ range where $paginator.Pages ".Params.announce" "!=" false }}
               {{ $post := . }}
           <div class="listItem">
-             <!--{{ $card := (.Resources.ByType "image").GetMatch "*-sq*" }}
-             {{ with $card }}-->
-             
+
              {{ $thumbnail := (.Resources.ByType “image”).GetMatch “thumbnail*” }}
              {{ $sq := (.Resources.ByType “image”).GetMatch “-sq*” | default $thumbnail }}
              {{ with $sq }}
