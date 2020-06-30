@@ -933,10 +933,6 @@ ul.pagination li.page-item.active {
   letter-spacing: 0.25pt;
 }
 
-.listItem .itemDetails .itemMeta .itemDescription a {
- display: block;
-}
-
 /* CSS for centering images in blog posts */
 
 .article-content img {
