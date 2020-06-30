@@ -934,7 +934,7 @@ ul.pagination li.page-item.active {
 }
 
 .listItem .itemDetails .itemMeta .itemDescription a {
- /*display: block;*/
+ display: block;
 }
 
 /* CSS for centering images in blog posts */
