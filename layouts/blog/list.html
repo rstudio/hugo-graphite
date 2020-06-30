@@ -12,8 +12,9 @@
               {{ $post := . }}
           <div class="listItem">
 
-             {{ $thumbnail := (.Resources.ByType "image").GetMatch (or ("*thumbnail*") ("*-sq*")) }}
-             {{ with $thumbnail }}
+             {{ $thumbnail := (.Resources.ByType "image").GetMatch "*thumbnail*" }}
+             {{ $sq := (.Resources.ByType "image").GetMatch "*-sq*" | default $thumbnail }}
+             {{ with $sq }}
               <a class="itemImage project" href="{{ $post.RelPermalink }}" aria-hidden="true">
                 <img src="{{ .RelPermalink }}">
               </a>
