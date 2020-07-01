@@ -402,15 +402,18 @@ div.warning {
 /*--- Event Stickies ---*/
 
 {{ with .Param "event_stickies.background" }}
+
   .event {
     -moz-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.1);
   }
+
 {{ end }}
 
 
 {{ if .Param "event_stickies.straight" }}
+
   .event:nth-child(2) {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); 
@@ -430,6 +433,7 @@ div.warning {
 
 
 {{ with .Param "event_stickies.border_color" }}
+
   .section .event {
     border-top: 7pt solid {{ . }};
   }
