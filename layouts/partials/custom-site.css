@@ -401,16 +401,16 @@ div.warning {
 
 /*--- Event Stickies ---*/
 
-{{with .Param "event_stickies.background"}}
+{{ with .Param "event_stickies.background" }}
   .event {
     -moz-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.1);
   }
-{{end}}
+{{ end }}
 
 
-{{if .Param "event_stickies.straight"}}
+{{ if .Param "event_stickies.straight" }}
   .event:nth-child(2) {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); 
@@ -419,32 +419,86 @@ div.warning {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); 
   }
-{{end}}
+{{ end }}
 
 
-{{with .Param "event_stickies.background"}}
+{{ with .Param "event_stickies.background" }}
   .section .event {
     background-color: {{ . }};
   }
-{{end}}
+{{ end }}
 
 
-{{with .Param "event_stickies.border_color"}}
+{{ with .Param "event_stickies.border_color" }}
   .section .event {
     border-top: 7pt solid {{ . }};
   }
 {{end}}
 
 
-{{with .Param "event_stickies.links"}}
+{{ with .Param "event_stickies.links" }}
   .section .event a{
       color: {{ . }};
   }
-{{end}}
+{{ end }}
 
 
-{{with .Param "event_stickies.text_color"}}
+{{ with .Param "event_stickies.text_color" }}
   .section .event {
       color: {{ . }};
   }
-{{end}}
+{{ end }}
+
+
+/* ------Test Drive Button-------*/
+
+{{ with .Param "test_drive.text" }}
+
+  .test-drive-btn {
+    color: {{ . }};
+  }
+
+{{ end }}
+
+
+{{ with .Param "test_drive.button" }}
+
+  .test-drive-btn {
+    background-color: {{ . }};
+  }
+
+{{ end }}
+
+
+{{ with .Param "test_drive.outline" }}
+
+  .test-drive-btn {
+    border: 1pt solid {{ . }};
+  }
+
+{{ end }}
+
+
+{{ with .Param "test_drive.hover_outline" }}
+
+  .test-drive-btn:hover {
+    border: 1pt solid {{ . }};
+  }
+
+{{ end }}
+
+{{ with .Param "test_drive.hover_text" }}
+
+  .test-drive-btn:hover {
+    color: {{ . }};
+  }
+
+{{ end }}
+
+{{ with .Param "test_drive.hover_button" }}
+
+  .test-drive-btn:hover {
+    background-color: {{ . }};
+  }
+
+{{ end }}
