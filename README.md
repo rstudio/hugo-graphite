@@ -30,7 +30,7 @@ Why graphite? It's a mineral made up of carbon atoms that are arranged in hexes.
 * Hexes on package pages are now symmetric
 * Improved functioning for highlighting active menu items in the upper navbar (even with Hugo [nested sections](https://gohugo.io/content-management/sections/#nested-sections))
 * JQuery upgrade
-* Improved RSS feed handling
+* Improved RSS feed handling (see: https://hugo-graphite.netlify.app/blog/index.xml)
 * Styled footnotes from Goldmark Renderer
 * Includes chroma CSS styles for highlighting via downlit for Hugodown sites
 * Shiny new demo site
