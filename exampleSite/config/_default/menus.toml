@@ -10,14 +10,15 @@
     url = "/blog/"
     weight = 2
 [[main]]
+    name = "Tutorials"
+    url = "/start/"
+    weight = 3
+[[main]]
     name = "Learn"
     url = "/learn/"
-    weight = 3
+    weight = 4
 [[main]]
     name = "Help"
     url = "/help/"
-    weight = 4
-[[main]]
-    name = "Contribute"
-    url = "/contribute/"
     weight = 5
+
