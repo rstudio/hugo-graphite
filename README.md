@@ -15,6 +15,7 @@ Why graphite? It's a mineral made up of carbon atoms that are arranged in hexes.
 ### New and improved features include:
 
 * Gains a sticky Table of Contents for blog posts
+* Gains new taxonomy terms templates for [tags](https://hugo-graphite.netlify.app/tags/) and [categories](https://hugo-graphite.netlify.app/categories/)
 * Gains copy-to-clipboard functionality for code chunks
 * Gains anchorized header links
 * Gains new shortcodes to create note and warning boxes
