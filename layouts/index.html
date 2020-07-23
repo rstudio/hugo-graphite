@@ -50,7 +50,7 @@
         <div>
           {{ .Content | markdownify }}
         </div>
-        <a href="{{ .Params.url_image }}"><img class="bookCover" src="{{ printf "images/%s" .Params.image | relURL }}" alt=""></a>
+        <a href="{{ .Params.url_image }}"><img class="bookCover" src="{{ printf "images/%s" .Params.image | relURL }}" alt="{{ .Params.alt_text }}"></a>
       </div>
       <div class="blurb">
         <div class="tagline small"></div>

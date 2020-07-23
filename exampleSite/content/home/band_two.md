@@ -1,6 +1,7 @@
 ---
 title: "Learn the tidyverse"
 image: cover.png
+alt_text: "R for Data Science book cover"
 url_image: http://amzn.to/2aHLAQ1
 ---
 
