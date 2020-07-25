@@ -1729,9 +1729,9 @@ table.dataTable.no-footer,
 /* Style buttons */
 
 .test-drive-btn {
-  background-color: #eab0c46b;
-  border: solid 1pt #ca225e47;
-  color: #ca225e;
+  background-color: #4254a730;
+  border: solid 1pt #4254a7;
+  color: #4254a7;
   padding: 12px 16px;
   font-size: 16px;
   cursor: pointer;
@@ -1742,9 +1742,13 @@ table.dataTable.no-footer,
 
 /* Darker background on mouse-over */
 .test-drive-btn:hover {
-  background-color: #CA225E;
+  background-color: #4254a7;
   color: #fcfcfc;
   border: 1pt solid;
+}
+
+.test-drive-btn a:hover {
+  text-decoration: none;
 }
 
 /*---- STICKY Sidebars for all w/ SMOOTH SCROLL-----*/
