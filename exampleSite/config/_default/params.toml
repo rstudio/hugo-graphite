@@ -128,5 +128,12 @@ MathJaxVersion = "2.7.1"
     border_color = "#a19ea936"
     background = "#eab0c41a"
     
-    
+[test_drive]
+# For test drive button colors
+    text = ""
+    button = ""
+    outline = ""
+    hover_text = ""
+    hover_button = ""
+    hover_outline = ""  
 
