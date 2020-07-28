@@ -464,3 +464,56 @@ div.warning {
       color: {{ . }};
   }
 {{end}}
+
+/* ------Test Drive Button-------*/
+
+{{ with .Param "test_drive.text" }}
+
+  .test-drive-btn {
+    color: {{ . }};
+  }
+
+{{ end }}
+
+
+{{ with .Param "test_drive.button" }}
+
+  .test-drive-btn {
+    background-color: {{ . }};
+  }
+
+{{ end }}
+
+
+{{ with .Param "test_drive.outline" }}
+
+  .test-drive-btn {
+    border: 1pt solid {{ . }};
+  }
+
+{{ end }}
+
+
+{{ with .Param "test_drive.hover_outline" }}
+
+  .test-drive-btn:hover {
+    border: 1pt solid {{ . }};
+  }
+
+{{ end }}
+
+{{ with .Param "test_drive.hover_text" }}
+
+  .test-drive-btn:hover {
+    color: {{ . }};
+  }
+
+{{ end }}
+
+{{ with .Param "test_drive.hover_button" }}
+
+  .test-drive-btn:hover {
+    background-color: {{ . }};
+  }
+
+{{ end }} 
