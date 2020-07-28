@@ -1752,8 +1752,8 @@ table.dataTable.no-footer,
   border: 1pt solid;
 }
 
-.test-drive-btn a:hover {
-  text-decoration: none;
+a.test-drive-link:hover {
+   text-decoration: none;
 }
 
 /*---- STICKY Sidebars for all w/ SMOOTH SCROLL-----*/
