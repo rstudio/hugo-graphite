@@ -310,7 +310,7 @@ div.warning {
   #menu {
     text-transform: {{ . }};
     letter-spacing: 2pt;
-    font-size: 0.8rem !important;
+    font-size: 0.9rem !important;
   }
   
   .column25 .sectionTitle,
