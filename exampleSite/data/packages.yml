@@ -4,7 +4,6 @@ ggplot2:
   url_git: https://github.com/tidyverse/ggplot2
   url_docs: https://ggplot2.tidyverse.org/
   url_cran: https://cloud.r-project.org/web/packages/ggplot2/index.html
-  url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/ggplot2.png
   name: ggplot2
 dplyr:
   weight: 10
@@ -12,7 +11,6 @@ dplyr:
   url_git: https://github.com/tidyverse/dplyr
   url_docs: https://dplyr.tidyverse.org/
   url_cran: https://cloud.r-project.org/web/packages/dplyr/index.html
-  url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/dplyr.png
   name: dplyr
 tidyr:
   weight: 20
@@ -20,7 +18,6 @@ tidyr:
   url_git: https://github.com/tidyverse/tidyr
   url_docs: https://tidyr.tidyverse.org/
   url_cran: https://cloud.r-project.org/web/packages/tidyr/index.html
-  url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/tidyr.png
   name: tidyr
 readr:
   weight: 30
@@ -28,7 +25,6 @@ readr:
   url_git: https://github.com/tidyverse/readr
   url_docs: https://readr.tidyverse.org/
   url_cran: https://cloud.r-project.org/web/packages/readr/index.html
-  url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/readr.png
   name: readr
 purrr:
   weight: 40
@@ -36,7 +32,6 @@ purrr:
   url_git: https://github.com/tidyverse/purrr
   url_docs: https://purrr.tidyverse.org/
   url_cran: https://cloud.r-project.org/web/packages/purrr/index.html
-  url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/purrr.png
   name: purrr
 tibble:
   weight: 50
@@ -44,7 +39,6 @@ tibble:
   url_git: https://github.com/tidyverse/tibble
   url_docs: https://tibble.tidyverse.org/
   url_cran: https://cloud.r-project.org/web/packages/tibble/index.html
-  url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/tibble.png
   name: tibble
 stringr:
   weight: 60
@@ -52,7 +46,6 @@ stringr:
   url_git: https://github.com/r-lib/stringr
   url_docs: https://stringr.tidyverse.org/
   url_cran: https://cloud.r-project.org/web/packages/stringr/index.html
-  url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/stringr.png
   name: stringr
 forcats:
   weight: 70
@@ -60,5 +53,4 @@ forcats:
   url_git: https://github.com/tidyverse/forcats
   url_docs: https://forcats.tidyverse.org/
   url_cran: https://cloud.r-project.org/web/packages/forcats/index.html
-  url_hex: https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/forcats.png
   name: forcats
