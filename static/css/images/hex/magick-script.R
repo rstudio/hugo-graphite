@@ -8,13 +8,10 @@ tidyverse_pngs <- fs::dir_ls("static/css/images/hex",
                        recurse = TRUE, 
                        glob = "*.png")
 
-paths_out <- fs::path_dir(tb_files) %>% 
-  fs::path(., "tb", ext = "png")
-
 scale_hex <- function(hex) {
   hex %>%
     image_read() %>% 
-    image_scale("120x139") %>% 
+    image_scale("736x853") %>% 
     image_write(hex, quality = 90)
 }
 
