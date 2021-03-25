@@ -852,6 +852,7 @@ ul.pagination li.page-item.active {
     background-image: url(images/tidyCategoryDeepDive.svg);}
   .articleCategory.roundup {
     background-image: url(images/tidyCategoryRoundup.svg);
+    background-position: 5px;
   }
 
 /* Hack so the svg's in bullets aren't given display block */
