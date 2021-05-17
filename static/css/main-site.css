@@ -2194,5 +2194,19 @@ a > svg.anchor-symbol:hover {
 .listItem .itemImage {
     overflow: hidden;
  }
- 
 
+/* keyboard */
+
+.markdown-section kbd {
+	display: inline-block;
+	min-width: 2.5em;
+	margin: 0 0;
+	padding: 0.3em 0.3em;
+	border: 1px solid #4d4d4d;
+	border-radius: 4px;
+	background: #f7f7f7;
+	font-family: inherit;
+	text-align: center;
+	letter-spacing: 0;
+	line-height: 1;
+}
