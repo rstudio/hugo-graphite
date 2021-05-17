@@ -2197,7 +2197,7 @@ a > svg.anchor-symbol:hover {
 
 /* keyboard */
 
-.markdown-section kbd {
+kbd {
 	display: inline-block;
 	min-width: 2.5em;
 	margin: 0 0;
