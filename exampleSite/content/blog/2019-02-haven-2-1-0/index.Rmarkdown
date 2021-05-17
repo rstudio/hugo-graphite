@@ -14,6 +14,8 @@ photo:
   author: Skitterphoto
 ---
 
+<kbd>Cmd</kbd> +<kbd>Shift</kbd> + <kbd>R</kbd>
+
 ```{r setup, include = FALSE}
 library(haven)
 knitr::opts_chunk$set(
