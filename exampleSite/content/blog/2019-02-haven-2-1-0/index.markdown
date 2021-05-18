@@ -14,7 +14,7 @@ photo:
   author: Skitterphoto
 ---
 
-
+<kbd>Cmd</kbd> +<kbd>Shift</kbd> + <kbd>R</kbd>
 
 We're delighted to announce that [haven 2.1.0](https://haven.tidyverse.org/) is now on CRAN. haven enables R to read and write various data formats used by other statistical packages by wrapping the [ReadStat](https://github.com/WizardMac/ReadStat) C library written by [Evan Miller](https://www.evanmiller.org/). For a full account of updates in this release, see the [Changelog](https://haven.tidyverse.org/news/index.html).
 
