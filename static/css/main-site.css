@@ -2199,10 +2199,10 @@ a > svg.anchor-symbol:hover {
 
 kbd {
 	display: inline-block;
-	min-width: 2.5em;
+	min-width: 1em;
 	margin: 0 0;
 	padding: 0.3em 0.3em;
-	border: 1px solid #4d4d4d;
+	border: 1px solid #ebebeb;
 	border-radius: 4px;
 	background: #f7f7f7;
 	font-family: inherit;
