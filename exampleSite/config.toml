@@ -21,6 +21,9 @@ preserveTaxonomyNames = true
 # uncomment the next line to disable listing authors
 # disableKinds = ["taxonomyTerm"]
 
+[outputs]
+  section = ["JSON", "HTML"]
+
 [permalinks]
   blog = "blog/:year/:month/:slug/"
 
